@@ -44,7 +44,7 @@ export class HomePage extends BasePage {
     await this.searchButton.click();
     const response = await responsePromise;
     let jsonData=await response.json();
-    console.log(jsonData.pageProps.dehydratedState.queries[1].state.data.availableCategoriesWithCount[0].count);
+   // console.log(jsonData.pageProps.dehydratedState.queries[1].state.data.availableCategoriesWithCount[0].count);
     let count= parseInt(jsonData.pageProps.dehydratedState.queries[1].state.data.availableCategoriesWithCount[0].count);
     this.searchCount = count;
     console.log("response total number;"+count);
@@ -83,7 +83,7 @@ export class HomePage extends BasePage {
     let url = `search/products?page=${lastPage}&q=mower&sort=BoostOrder`;
     await this.page.goto(url);
 
-    let productName = await this.page.locator(`div[data-index="${index}"]`).locator('p').first().textContent();
+    let productName = await this.page.locator(`div[data-index="${index}"]`).locator('p').first().innerText();
     console.log("productName"+productName);
 
     return productName;
