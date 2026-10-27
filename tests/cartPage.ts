@@ -6,13 +6,22 @@ export class CartPage extends BasePage {
 	readonly checkoutButton: Locator;
     readonly findStoreDiv: Locator;
     readonly summarySection: Locator;
+    readonly clickCollectEelement: Locator;
+    readonly selectStoreCombobox: Locator;
+    readonly autoSuggestionListBox: Locator;
+    readonly promiseEelement: Locator;
 
 	constructor(page: Page) {
     	super(page);
 		this.cartItems = page.locator('.cartTileContainer');
-		this.checkoutButton = page.getByRole('button', { name: /Continue to checkout/i });
+		//this.checkoutButton = page.getByRole('button', { name: /Continue to checkout/i });
         this.findStoreDiv = page.getByText(/Find a store/i);
         this.summarySection = page.locator('div.orderSummaryWrapper');
+        this.checkoutButton = this.summarySection.getByRole('button', { name: /Continue to checkout/i });
+        this.clickCollectEelement= page.locator('label').filter({hasText: "Click & Collect"});
+        this.selectStoreCombobox = page.getByRole('combobox', { name: 'Search postcode or suburb' });
+        this.autoSuggestionListBox = page.locator('#storeAutoSuggest-listbox');
+        this.promiseEelement = page.locator('div.storeInfoBanner');
 	}
 
 	async goto(): Promise<void> {
@@ -22,19 +31,16 @@ export class CartPage extends BasePage {
     async clickCollect():Promise<void>{
       // Because the sr-only class 
       //await this.page.locator('input[name="shopping-method"][value="pickup"]').check({ force: true });
-        await this.page
-                  .locator('label')
-                  .filter({hasText: "Click & Collect"})
-                  .click();
+        await this.clickCollectEelement.click();
+        
     }
 
     async selectStore(postCode:string,storeName:string):Promise<Locator>{
         await expect(this.page.getByText(/Select a store to check product availability./i)).toBeVisible();
         await this.findStoreDiv.click();
        // await this.page.getByLabel("Search postcode or suburb").fill(postCode);
-       await this.page.getByRole('combobox', { name: 'Search postcode or suburb' }).fill(postCode); 
-       await this.page.locator('#storeAutoSuggest-listbox')
-                        .getByRole('option')
+       await this.selectStoreCombobox.fill(postCode); 
+       await this.autoSuggestionListBox.getByRole('option')
                        .filter({hasText:"1050"})
                        .click();
        
@@ -92,8 +98,7 @@ export class CartPage extends BasePage {
         return price;
     }
     async getDeliveryPromise():Promise<string>{
-        const promise = await this.page.locator('div.storeInfoBanner')
-                                 .innerText();
+        const promise = await this.promiseEelement.innerText();
 
         //console.log(promise);
         return promise;
@@ -153,8 +158,8 @@ export class CartPage extends BasePage {
 	}
 
 	async proceedToCheckout(): Promise<void> {
-		await expect(this.summarySection.getByRole('button', { name: /Continue to checkout/i })).toBeEnabled();
-		await this.summarySection.getByRole('button', { name: /Continue to checkout/i }).click();
+		await expect(this.checkoutButton).toBeEnabled();
+		await this.checkoutButton.click();
 	}
     async checkOrderSummary(item:number):Promise<number>{
         await expect(this.summarySection.getByRole('heading',{name:"Order summary"})).toBeVisible();
