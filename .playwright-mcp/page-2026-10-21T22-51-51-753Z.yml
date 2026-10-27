@@ -1,0 +1,1554 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - status [ref=e3]
+    - generic [ref=e4]:
+      - link "Skip to main content" [ref=e5] [cursor=pointer]:
+        - /url: "#main"
+      - alert [ref=e12]:
+        - generic [ref=e16]: Information
+        - generic [ref=e17]:
+          - generic [ref=e18]: Keeping our team and customers safe.
+          - generic [ref=e19]:
+            - text: Learn more about how we use facial recognition technology in our stores.
+            - link "Read more" [ref=e20] [cursor=pointer]:
+              - /url: /about-us/facial-recognition-technology
+        - button "Dismiss alert" [ref=e21] [cursor=pointer]
+      - banner [ref=e25]:
+        - generic [ref=e27]:
+          - generic [ref=e29]:
+            - heading "Bunnings Bunnings Warehouse – New Zealand DIY, Garden Hardware Store" [level=1] [ref=e31]:
+              - link "Bunnings" [ref=e32] [cursor=pointer]:
+                - /url: /
+                - img "Bunnings" [ref=e33]
+              - generic [ref=e34]: Bunnings Warehouse – New Zealand DIY, Garden Hardware Store
+            - search [ref=e38]:
+              - generic [ref=e39]: Search
+              - combobox "Search" [ref=e43]
+              - generic [ref=e44]:
+                - button "Clear search input" [disabled] [ref=e45]
+                - button "Submit search" [disabled] [ref=e48]
+            - generic [ref=e52]:
+              - button "Ask Buddy" [disabled] [ref=e54]
+              - button "account icon" [ref=e62] [cursor=pointer]:
+                - generic [ref=e63]:
+                  - img "Account user"
+                - generic [ref=e64]: Sign in
+              - button [ref=e68] [cursor=pointer]:
+                - img "Project List Icon"
+                - img "red dot icon"
+                - generic [ref=e69]: Lists
+              - button [ref=e71] [cursor=pointer]:
+                - generic [ref=e72]:
+                  - img "Shopping cart"
+                - generic [ref=e73]: Cart
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - button "Open menu" [ref=e79] [cursor=pointer]:
+                - generic [ref=e85]: Menu
+              - link "Visit the Bunnings Trade website (opens in a new tab)" [ref=e90] [cursor=pointer]:
+                - /url: https://trade.bunnings.co.nz
+            - generic [ref=e96]:
+              - link "Lowest Price Policy^" [ref=e98] [cursor=pointer]:
+                - /url: /policies/our-price-guarantee
+              - link "Spend & Earn Rewards" [ref=e101] [cursor=pointer]:
+                - /url: /bunnings-rewards
+              - link "2 hour Click & Collect" [ref=e104] [cursor=pointer]:
+                - /url: /services/in-store/click-collect
+          - region "Notifications (F8)":
+            - list
+      - main [ref=e107]:
+        - generic [ref=e109]:
+          - generic [ref=e112]:
+            - link "Bulk pack value for your garden" [ref=e113] [cursor=pointer]:
+              - /url: /yates-4l-hose-on-weed-n-feed_p0114242
+              - generic [ref=e114]:
+                - generic [ref=e115]:
+                  - heading "Bulk pack value for your garden" [level=3] [ref=e118]
+                  - paragraph [ref=e119]: Stock up on garden essentials for less
+                  - generic [ref=e120]:
+                    - paragraph [ref=e122]:
+                      - text: $30
+                      - superscript [ref=e123]: ".46"
+                    - generic [ref=e124]: $7.62 per litre
+                - generic [ref=e126]: Shop now
+              - figure [ref=e130]:
+                - img "Yates 4L Hose On Weed 'N' Feed" [ref=e132]
+            - link "Ozito 18V Brushless Chainsaw & Radio Kit" [ref=e133] [cursor=pointer]:
+              - /url: /ozito-pxc-18v-brushless-chainsaw-radio-2-5ah-kit-pcsrk-1820_p1175157
+              - figure [ref=e135]:
+                - img "Ozito PXC 18V Brushless Chainsaw & Radio 2.5Ah Kit PCSRK-1820" [ref=e137]
+              - generic [ref=e138]:
+                - heading "Ozito 18V Brushless Chainsaw & Radio Kit" [level=3] [ref=e139]
+                - generic [ref=e140]:
+                  - paragraph [ref=e143]: $399
+                  - img "carouselNext" [ref=e145]
+            - link "90 x 19mm Kwila Pre-Oiled Smooth Decking" [ref=e148] [cursor=pointer]:
+              - /url: /90-x-19mm-kwila-pre-oiled-select-grade-smooth-decking-random-lengths_p0200172
+              - figure [ref=e150]:
+                - img "Product.SpecRite 90 x 19mm Pre-Oiled Select Grade Smooth Kwila Decking - Random Lengths.0200172.NZ.productOtherMedia.1" [ref=e152]
+              - generic [ref=e153]:
+                - heading "90 x 19mm Kwila Pre-Oiled Smooth Decking" [level=3] [ref=e154]
+                - generic [ref=e156]:
+                  - generic [ref=e157]: $5.59 per linear metre
+                  - img "carouselNext" [ref=e159]
+            - link "Say hello to Bunnings Rewards A more rewarding way to shop. Join now" [ref=e162] [cursor=pointer]:
+              - /url: /bunnings-rewards
+              - generic [ref=e163]:
+                - figure [ref=e166]:
+                  - img "Logo- BunnRewards- Star" [ref=e168]
+                - generic [ref=e169]:
+                  - heading "Say hello to Bunnings Rewards" [level=2] [ref=e172]
+                  - heading "A more rewarding way to shop." [level=4] [ref=e174]
+                - generic [ref=e175]: Join now
+          - generic [ref=e180]:
+            - generic [ref=e183]:
+              - 'link "warning icon Product Recall: Mistral Barrel Vacuum Cleaners" [ref=e186] [cursor=pointer]':
+                - /url: /help-centre/product-recalls
+                - generic [ref=e187]:
+                  - img "warning icon" [ref=e188]
+                  - paragraph [ref=e191]:
+                    - generic [ref=e192]: "Product Recall:"
+                    - text: Mistral Barrel Vacuum Cleaners
+              - 'link "warning icon Product Recall: 18m extension cord sold with Vax Bagged backpack vacuum cleaner" [ref=e195] [cursor=pointer]':
+                - /url: /help-centre/product-recalls
+                - generic [ref=e196]:
+                  - img "warning icon" [ref=e197]
+                  - paragraph [ref=e200]:
+                    - generic [ref=e201]: "Product Recall:"
+                    - text: 18m extension cord sold with Vax Bagged backpack vacuum cleaner
+              - 'link "warning icon Product Recall: Sylvan SLGO2 Smart Hub" [ref=e204] [cursor=pointer]':
+                - /url: /help-centre/product-recalls
+                - generic [ref=e205]:
+                  - img "warning icon" [ref=e206]
+                  - paragraph [ref=e209]:
+                    - generic [ref=e210]: "Product Recall:"
+                    - text: Sylvan SLGO2 Smart Hub
+              - link "View all product recalls" [ref=e213] [cursor=pointer]:
+                - /url: /help-centre/product-recalls
+            - button "Previous" [ref=e214] [cursor=pointer]:
+              - img "Previous" [ref=e215]
+            - button "Next" [ref=e217] [cursor=pointer]:
+              - img "Next" [ref=e218]
+          - link "Sponsored The paint for every part of your home Outside, inside and every surface in between. Click to view range" [ref=e222] [cursor=pointer]:
+            - /url: https://www.bunnings.co.nz/search/products?page=1&q=dulux+exterior&sort=BoostOrder
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - figure [ref=e227]:
+                  - img "Three cans of Dulux paint on a navy blue background" [ref=e229]
+                - generic [ref=e230]: Sponsored
+                - figure [ref=e233]:
+                  - img "Dulux logo." [ref=e235]
+              - generic [ref=e236]:
+                - generic [ref=e238]:
+                  - heading "The paint for every part of your home" [level=2] [ref=e239]
+                  - paragraph [ref=e240]: Outside, inside and every surface in between.
+                - generic [ref=e241]: Click to view range
+          - heading "Choose the rewards programme that suits how you shop" [level=3] [ref=e249]
+          - generic [ref=e252]:
+            - link "For home" [ref=e253] [cursor=pointer]:
+              - /url: /bunnings-rewards
+              - generic [ref=e254]:
+                - generic [ref=e255]:
+                  - img "Bunnings Rewards" [ref=e257]
+                  - heading "For home" [level=3] [ref=e260]
+                  - paragraph [ref=e261]: Get rewarded for your projects, big or small
+                - generic [ref=e262]: Join Bunnings Rewards
+              - figure [ref=e266]:
+                - img "Customer browsing flowering plants in a garden centre with a child holding a potted flowering plant." [ref=e268]
+            - link "For work" [ref=e269] [cursor=pointer]:
+              - /url: https://trade.bunnings.co.nz/powerpass-pro-rewards
+              - generic [ref=e270]:
+                - generic [ref=e271]:
+                  - img "PowerPass Pro Rewards by Bunnings" [ref=e273]
+                  - heading "For work" [level=3] [ref=e276]
+                  - paragraph [ref=e277]: Build rewards on eligible business purchases
+                - generic [ref=e278]: Explore PowerPass Pro Rewards
+              - figure [ref=e282]:
+                - img "Trade professional holding a tablet beside a scissor lift at a residential construction site." [ref=e284]
+          - region "Shop our range" [ref=e286]:
+            - generic [ref=e287]:
+              - heading "Shop our range" [level=2] [ref=e289]
+              - link "View all categories" [ref=e291] [cursor=pointer]:
+                - /url: /products
+            - generic [ref=e293]:
+              - list [ref=e295]:
+                - listitem [ref=e296]:
+                  - link [ref=e297] [cursor=pointer]:
+                    - /url: /products/outdoor-living
+                    - figure [ref=e301]:
+                      - img "Product CLP (Tiles) - L4 - Outdoor Living - Outdoor Shade - Gazebos - Fixed Gazebos" [ref=e303]
+                    - paragraph [ref=e304]: Outdoor Living
+                - listitem [ref=e305]:
+                  - link [ref=e306] [cursor=pointer]:
+                    - /url: /products/garden
+                    - figure [ref=e310]:
+                      - img "Product CLP (Tiles) - L3 - Garden - Garden & Outdoor Structures - Raised Garden Beds" [ref=e312]
+                    - paragraph [ref=e313]: Garden
+                - listitem [ref=e314]:
+                  - link [ref=e315] [cursor=pointer]:
+                    - /url: /products/tools
+                    - figure [ref=e319]:
+                      - img "Product.Kincrome 24oz Claw Hammer.0105803.AU.mainimage" [ref=e321]
+                    - paragraph [ref=e322]: Tools
+                - listitem [ref=e323]:
+                  - link [ref=e324] [cursor=pointer]:
+                    - /url: /products/building-hardware
+                    - figure [ref=e328]:
+                      - img "Product.200 x 50MM 1.8M Treated Pine Sleeper H4.8032701.AU.mainimage" [ref=e330]
+                    - paragraph [ref=e331]: Building & Hardware
+                - listitem [ref=e332]:
+                  - link [ref=e333] [cursor=pointer]:
+                    - /url: /products/storage-cleaning
+                    - figure [ref=e337]:
+                      - img "Product.Flexi Storage Clever Cube 76 x 39 x 146cm 2 x 4 Storage Unit - White.2583384.AU.mainimage" [ref=e339]
+                    - paragraph [ref=e340]: Storage & Cleaning
+                - listitem [ref=e341]:
+                  - link [ref=e342] [cursor=pointer]:
+                    - /url: https://www.bunnings.co.nz/products/electrical-smart-home
+                    - figure [ref=e346]:
+                      - img "Product.Swann Black Evo Wireless Video Doorbell.0962102.NZ.mainimage" [ref=e348]
+                    - paragraph [ref=e349]: Electrical & Smart Home
+                - listitem [ref=e350]:
+                  - link [ref=e351] [cursor=pointer]:
+                    - /url: https://www.bunnings.co.nz/products/lighting
+                    - figure [ref=e355]:
+                      - img "Product.Lytworx Warm White Connectable Aspen Festoon Lights - 50 Pack.0520908.NZ.mainimage" [ref=e357]
+                    - paragraph [ref=e358]: Lighting
+                - listitem [ref=e359]:
+                  - link [ref=e360] [cursor=pointer]:
+                    - /url: /products/kitchen
+                    - figure [ref=e364]:
+                      - img "Product.Practa Straight Line Modular Kitchen.2660830.AU.mainimage" [ref=e366]
+                    - paragraph [ref=e367]: Kitchen
+                - listitem [ref=e368]:
+                  - link [ref=e369] [cursor=pointer]:
+                    - /url: /products/bathroom-plumbing
+                    - figure [ref=e373]:
+                      - img "Product.Cibo Design White Round Thin Edge Ceramic Basin.0147642.AU.mainimage" [ref=e375]
+                    - paragraph [ref=e376]: Bathroom & Plumbing
+                - listitem [ref=e377]:
+                  - link [ref=e378] [cursor=pointer]:
+                    - /url: /products/paint-decorating
+                    - figure [ref=e382]:
+                      - img "Product CLP (Tiles) - L3 - Paint & Wallpaper - Painting Tools & Equipment - Paint Rollers" [ref=e384]
+                    - paragraph [ref=e385]: Paint & Woodcare
+                - listitem [ref=e386]:
+                  - link [ref=e387] [cursor=pointer]:
+                    - /url: /products/flooring-tiles
+                    - figure [ref=e391]:
+                      - img "Product.Duratile 60 x 60cm Nero Porcelain Floor / Wall Tile - 3 Carton.0087520.AU.mainimage" [ref=e393]
+                    - paragraph [ref=e394]: Flooring
+                - listitem [ref=e395]:
+                  - link [ref=e396] [cursor=pointer]:
+                    - /url: /products/pet-supplies
+                    - figure [ref=e400]:
+                      - img "Product.HAPPY TAILS PINK & BLUE BALL ROPE TOY.0577463.AU.mainimage" [ref=e402]
+                    - paragraph [ref=e403]: Pet Supplies
+                - listitem [ref=e404]:
+                  - link [ref=e405] [cursor=pointer]:
+                    - /url: /products/assisted-living
+                    - figure [ref=e409]:
+                      - img "Product.Sandleford 180 x 230mm Accessible Toilet LH Braille Sign.3291757.AU.mainimage" [ref=e411]
+                    - paragraph [ref=e412]: Assisted Living
+                - listitem [ref=e413]:
+                  - link [ref=e414] [cursor=pointer]:
+                    - /url: /products/hire-shop
+                    - figure [ref=e418]:
+                      - 'img "Product.For Hire: Britex Carpet Cleaner - 48hr.5450006.AU.mainimage" [ref=e420]'
+                    - paragraph [ref=e421]: Hire Shop
+              - button "Next item" [ref=e423] [cursor=pointer]
+              - generic [aria-hidden] [ref=e428] [cursor=pointer]
+          - generic [ref=e433]:
+            - heading "Trending products under $100" [level=2] [ref=e439]
+            - tabpanel [ref=e442]:
+              - generic [ref=e443]:
+                - generic [ref=e446]:
+                  - generic [ref=e449]:
+                    - link "Sit N Spin Black Bucket Seat, 2.5 stars from 2 reviews, Price $17.99" [ref=e450] [cursor=pointer]:
+                      - /url: /sit-n-spin-black-bucket-seat_p1152086
+                      - figure [ref=e453]:
+                        - img "Sit N Spin Black Bucket Seat" [ref=e455]
+                      - paragraph [ref=e458]: Sit N Spin Black Bucket Seat
+                    - generic [ref=e459]:
+                      - generic [ref=e460]:
+                        - generic [ref=e461]: "2.5"
+                        - 'img "Rating: 2.5 out of 5 stars" [ref=e462]'
+                        - generic [ref=e473]: (2)
+                      - generic [ref=e475]:
+                        - paragraph [ref=e479]:
+                          - text: $17
+                          - superscript [ref=e480]: ".99"
+                        - generic [ref=e481]:
+                          - button "Add to project list" [ref=e483] [cursor=pointer]
+                          - button "Add to Cart" [ref=e488] [cursor=pointer]
+                  - generic [ref=e497]:
+                    - link "Bunnings Mystery Box Shoe Charms, Price $2.50" [ref=e498] [cursor=pointer]:
+                      - /url: /bunnings-mystery-box-shoe-charms_p1155565
+                      - figure [ref=e501]:
+                        - img "Bunnings Mystery Box Shoe Charms" [ref=e503]
+                      - paragraph [ref=e506]: Bunnings Mystery Box Shoe Charms
+                    - generic [ref=e507]:
+                      - generic [ref=e508]:
+                        - 'img "Rating: 0 out of 5 stars" [ref=e509]'
+                        - generic [ref=e520]: (0)
+                      - generic [ref=e522]:
+                        - paragraph [ref=e526]:
+                          - text: $2
+                          - superscript [ref=e527]: ".50"
+                        - generic [ref=e528]:
+                          - button "Add to project list" [ref=e530] [cursor=pointer]
+                          - button "Add to Cart" [ref=e535] [cursor=pointer]
+                  - generic [ref=e544]:
+                    - link "Yates 4L Hose On Weed 'N' Feed, 3.8 stars from 51 reviews, Price $30.46, $7.62 per litre" [ref=e545] [cursor=pointer]:
+                      - /url: /yates-4l-hose-on-weed-n-feed_p0114242
+                      - figure [ref=e548]:
+                        - img "Yates 4L Hose On Weed 'N' Feed" [ref=e550]
+                      - generic [ref=e552]:
+                        - generic "Yates" [ref=e554]
+                        - paragraph [ref=e555]: Yates 4L Hose On Weed 'N' Feed
+                    - generic [ref=e556]:
+                      - generic [ref=e557]:
+                        - generic [ref=e558]: "3.8"
+                        - 'img "Rating: 3.8 out of 5 stars" [ref=e559]'
+                        - generic [ref=e570]: (51)
+                      - generic [ref=e572]:
+                        - generic [ref=e574]:
+                          - paragraph [ref=e576]:
+                            - text: $30
+                            - superscript [ref=e577]: ".46"
+                          - generic [ref=e578]: $7.62 per litre
+                        - generic [ref=e580]:
+                          - button "Add to project list" [ref=e582] [cursor=pointer]
+                          - button "Add to Cart" [ref=e587] [cursor=pointer]
+                  - generic [ref=e596]:
+                    - link "Fountain Products 697 x 425 x 655mm Charcoal Raised Garden Bed, 4.6 stars from 282 reviews, Price $22.99" [ref=e597] [cursor=pointer]:
+                      - /url: /fountain-products-697-x-425-x-655mm-charcoal-raised-garden-bed_p0176623
+                      - figure [ref=e600]:
+                        - img "Fountain Products 697 x 425 x 655mm Charcoal Raised Garden Bed" [ref=e602]
+                      - generic [ref=e604]:
+                        - generic "Fountain Products" [ref=e606]
+                        - paragraph [ref=e607]: Fountain Products 697 x 425 x 655mm Charcoal Raised Garden Bed
+                    - generic [ref=e608]:
+                      - generic [ref=e609]:
+                        - generic [ref=e610]: "4.6"
+                        - 'img "Rating: 4.6 out of 5 stars" [ref=e611]'
+                        - generic [ref=e622]: (282)
+                      - generic [ref=e624]:
+                        - paragraph [ref=e628]:
+                          - text: $22
+                          - superscript [ref=e629]: ".99"
+                        - generic [ref=e630]:
+                          - button "Add to project list" [ref=e632] [cursor=pointer]
+                          - button "Add to Cart" [ref=e637] [cursor=pointer]
+                  - generic [ref=e646]:
+                    - link "Happy Tails Pet Ball Launcher, 3.3 stars from 19 reviews, Price $35.98" [ref=e647] [cursor=pointer]:
+                      - /url: /happy-tails-pet-ball-launcher_p0439291
+                      - figure [ref=e650]:
+                        - img "Happy Tails Pet Ball Launcher" [ref=e652]
+                      - generic [ref=e654]:
+                        - generic "Happy Tails" [ref=e656]
+                        - paragraph [ref=e657]: Happy Tails Pet Ball Launcher
+                    - generic [ref=e658]:
+                      - generic [ref=e659]:
+                        - generic [ref=e660]: "3.3"
+                        - 'img "Rating: 3.3 out of 5 stars" [ref=e661]'
+                        - generic [ref=e672]: (19)
+                      - generic [ref=e674]:
+                        - paragraph [ref=e678]:
+                          - text: $35
+                          - superscript [ref=e679]: ".98"
+                        - generic [ref=e680]:
+                          - button "Add to project list" [ref=e682] [cursor=pointer]
+                          - button "Add to Cart" [ref=e687] [cursor=pointer]
+                  - generic [ref=e696]:
+                    - link "Mistral 22.2V Cordless 2-In-1 StickVac, 4.3 stars from 39 reviews, Price $89.00" [ref=e697] [cursor=pointer]:
+                      - /url: /mistral-22-2v-cordless-2-in-1-stickvac_p0844799
+                      - figure [ref=e700]:
+                        - img "Mistral 22.2V Cordless 2-In-1 StickVac" [ref=e702]
+                      - generic [ref=e704]:
+                        - generic "Mistral" [ref=e706]
+                        - paragraph [ref=e707]: Mistral 22.2V Cordless 2-In-1 StickVac
+                    - generic [ref=e708]:
+                      - generic [ref=e709]:
+                        - generic [ref=e710]: "4.3"
+                        - 'img "Rating: 4.3 out of 5 stars" [ref=e711]'
+                        - generic [ref=e722]: (39)
+                      - generic [ref=e724]:
+                        - paragraph [ref=e728]: $89
+                        - generic [ref=e729]:
+                          - button "Add to project list" [ref=e731] [cursor=pointer]
+                          - button "Add to Cart" [ref=e736] [cursor=pointer]
+                  - generic [ref=e745]:
+                    - 'link "100mm Assorted Potted Colour, Availability: In-store only, 5 stars from 3 reviews, Price $1.80" [ref=e746] [cursor=pointer]':
+                      - /url: /100mm-assorted-potted-colour_p0431151
+                      - figure [ref=e749]:
+                        - img "100mm Assorted Potted Colour" [ref=e751]
+                      - generic [ref=e753]:
+                        - generic "Greenlife" [ref=e755]
+                        - paragraph [ref=e756]: 100mm Assorted Potted Colour
+                    - generic [ref=e757]:
+                      - generic [ref=e758]:
+                        - generic [ref=e759]: "5"
+                        - 'img "Rating: 5 out of 5 stars" [ref=e760]'
+                        - generic [ref=e771]: (3)
+                      - generic [ref=e773]:
+                        - paragraph [ref=e777]:
+                          - text: $1
+                          - superscript [ref=e778]: ".80"
+                        - generic [ref=e779]:
+                          - button "Add to project list" [ref=e781] [cursor=pointer]
+                          - generic [ref=e784]: In-store only
+                  - generic [ref=e789]:
+                    - link "Maclaren 600mm White 2 Door Cupboard, 4.5 stars from 77 reviews, Price $98.80" [ref=e790] [cursor=pointer]:
+                      - /url: /maclaren-600mm-white-2-door-cupboard_p0325037
+                      - figure [ref=e793]:
+                        - img "Maclaren 600mm White 2 Door Cupboard" [ref=e795]
+                      - generic [ref=e797]:
+                        - generic "Maclaren" [ref=e799]
+                        - paragraph [ref=e800]: Maclaren 600mm White 2 Door Cupboard
+                    - generic [ref=e801]:
+                      - generic [ref=e802]:
+                        - generic [ref=e803]: "4.5"
+                        - 'img "Rating: 4.5 out of 5 stars" [ref=e804]'
+                        - generic [ref=e815]: (77)
+                      - generic [ref=e817]:
+                        - paragraph [ref=e821]:
+                          - text: $98
+                          - superscript [ref=e822]: ".80"
+                        - generic [ref=e823]:
+                          - button "Add to project list" [ref=e825] [cursor=pointer]
+                          - button "Add to Cart" [ref=e830] [cursor=pointer]
+                  - generic [ref=e839]:
+                    - link "Click Power Bank Type-C With Phone Holder, 4.5 stars from 75 reviews, Price $7.49" [ref=e840] [cursor=pointer]:
+                      - /url: /click-power-bank-type-c-with-phone-holder_p0960623
+                      - figure [ref=e843]:
+                        - img "Click Power Bank Type-C With Phone Holder" [ref=e845]
+                      - generic [ref=e847]:
+                        - generic "Click" [ref=e849]
+                        - paragraph [ref=e850]: Click Power Bank Type-C With Phone Holder
+                    - generic [ref=e851]:
+                      - generic [ref=e852]:
+                        - generic [ref=e853]: "4.5"
+                        - 'img "Rating: 4.5 out of 5 stars" [ref=e854]'
+                        - generic [ref=e865]: (75)
+                      - generic [ref=e867]:
+                        - paragraph [ref=e871]:
+                          - text: $7
+                          - superscript [ref=e872]: ".49"
+                        - generic [ref=e873]:
+                          - button "Add to project list" [ref=e875] [cursor=pointer]
+                          - button "Add to Cart" [ref=e880] [cursor=pointer]
+                  - generic [ref=e889]:
+                    - link "Ekodeck 219 x 26mm 1.8m Carbon Batten Screen Castellated Panel, Price $35.00, $19.44 per linear metre" [ref=e890] [cursor=pointer]:
+                      - /url: /ekodeck-219-x-26mm-1-8m-carbon-batten-screen-castellated-panel_p0745746
+                      - figure [ref=e893]:
+                        - img "Ekodeck 219 x 26mm 1.8m Carbon Batten Screen Castellated Panel" [ref=e895]
+                      - generic [ref=e897]:
+                        - generic "Ekodeck" [ref=e899]
+                        - paragraph [ref=e900]: Ekodeck 219 x 26mm 1.8m Carbon Batten Screen Castellated Panel
+                    - generic [ref=e901]:
+                      - generic [ref=e902]:
+                        - 'img "Rating: 0 out of 5 stars" [ref=e903]'
+                        - generic [ref=e914]: (0)
+                      - generic [ref=e916]:
+                        - generic [ref=e918]:
+                          - paragraph [ref=e920]: $35
+                          - generic [ref=e921]: $19.44 per linear metre
+                        - generic [ref=e923]:
+                          - button "Add to project list" [ref=e925] [cursor=pointer]
+                          - button "Add to Cart" [ref=e930] [cursor=pointer]
+                  - generic [ref=e939]:
+                    - link "Marquee 3 x 3m Venice Grey Semi Permanent Gazebo, 3.7 stars from 3 reviews, Price $99.00" [ref=e940] [cursor=pointer]:
+                      - /url: /marquee-3-x-3m-venice-grey-semi-permanent-gazebo_p0574346
+                      - figure [ref=e943]:
+                        - img "Marquee 3 x 3m Venice Grey Semi Permanent Gazebo" [ref=e945]
+                      - generic [ref=e947]:
+                        - generic "Marquee" [ref=e949]
+                        - paragraph [ref=e950]: Marquee 3 x 3m Venice Grey Semi Permanent Gazebo
+                    - generic [ref=e951]:
+                      - generic [ref=e952]:
+                        - generic [ref=e953]: "3.7"
+                        - 'img "Rating: 3.7 out of 5 stars" [ref=e954]'
+                        - generic [ref=e965]: (3)
+                      - generic [ref=e967]:
+                        - paragraph [ref=e971]: $99
+                        - generic [ref=e972]:
+                          - button "Add to project list" [ref=e974] [cursor=pointer]
+                          - button "Add to Cart" [ref=e979] [cursor=pointer]
+                  - generic [ref=e988]:
+                    - link "Garden Basics 40L All Purpose Potting Mix, 4.6 stars from 568 reviews, Price $8.55, $0.21 per litre" [ref=e989] [cursor=pointer]:
+                      - /url: /garden-basics-40l-all-purpose-potting-mix_p1069023
+                      - figure [ref=e992]:
+                        - img "Garden Basics 40L All Purpose Potting Mix" [ref=e994]
+                      - generic [ref=e996]:
+                        - generic "Garden Basics" [ref=e998]
+                        - paragraph [ref=e999]: Garden Basics 40L All Purpose Potting Mix
+                    - generic [ref=e1000]:
+                      - generic [ref=e1001]:
+                        - generic [ref=e1002]: "4.6"
+                        - 'img "Rating: 4.6 out of 5 stars" [ref=e1003]'
+                        - generic [ref=e1014]: (568)
+                      - generic [ref=e1016]:
+                        - generic [ref=e1018]:
+                          - paragraph [ref=e1020]:
+                            - text: $8
+                            - superscript [ref=e1021]: ".55"
+                          - generic [ref=e1022]: $0.21 per litre
+                        - generic [ref=e1024]:
+                          - button "Add to project list" [ref=e1026] [cursor=pointer]
+                          - button "Add to Cart" [ref=e1031] [cursor=pointer]
+                  - generic [ref=e1040]:
+                    - link "Keter 270L Graphite Marvel Plus Outdoor Storage Box, 4.3 stars from 155 reviews, Price $98.00" [ref=e1041] [cursor=pointer]:
+                      - /url: /keter-270l-graphite-marvel-plus-outdoor-storage-box_p0429261
+                      - figure [ref=e1044]:
+                        - img "Keter 270L Graphite Marvel Plus Outdoor Storage Box" [ref=e1046]
+                      - generic [ref=e1048]:
+                        - generic "Keter" [ref=e1050]
+                        - paragraph [ref=e1051]: Keter 270L Graphite Marvel Plus Outdoor Storage Box
+                    - generic [ref=e1052]:
+                      - generic [ref=e1053]:
+                        - generic [ref=e1054]: "4.3"
+                        - 'img "Rating: 4.3 out of 5 stars" [ref=e1055]'
+                        - generic [ref=e1066]: (155)
+                      - generic [ref=e1068]:
+                        - paragraph [ref=e1072]: $98
+                        - generic [ref=e1073]:
+                          - button "Add to project list" [ref=e1075] [cursor=pointer]
+                          - button "Add to Cart" [ref=e1080] [cursor=pointer]
+                  - generic [ref=e1089]:
+                    - link "Marquee 3m Charcoal Round Cantilever Umbrella, 2.4 stars from 205 reviews, Price $98.00" [ref=e1090] [cursor=pointer]:
+                      - /url: /marquee-3m-charcoal-round-cantilever-umbrella_p3192300
+                      - figure [ref=e1093]:
+                        - img "Marquee 3m Charcoal Round Cantilever Umbrella" [ref=e1095]
+                      - generic [ref=e1097]:
+                        - generic "Marquee" [ref=e1099]
+                        - paragraph [ref=e1100]: Marquee 3m Charcoal Round Cantilever Umbrella
+                    - generic [ref=e1101]:
+                      - generic [ref=e1102]:
+                        - generic [ref=e1103]: "2.4"
+                        - 'img "Rating: 2.4 out of 5 stars" [ref=e1104]'
+                        - generic [ref=e1115]: (205)
+                      - generic [ref=e1117]:
+                        - paragraph [ref=e1121]: $98
+                        - generic [ref=e1122]:
+                          - button "Add to project list" [ref=e1124] [cursor=pointer]
+                          - button "Add to Cart" [ref=e1129] [cursor=pointer]
+                  - generic [ref=e1138]:
+                    - link "Bestway H2OGO! Rainbow Ribbon Swim Tube, Price $12.00" [ref=e1139] [cursor=pointer]:
+                      - /url: /bestway-h2ogo-rainbow-ribbon-swim-tube_p0826210
+                      - figure [ref=e1142]:
+                        - img "Bestway H2OGO! Rainbow Ribbon Swim Tube" [ref=e1144]
+                      - generic [ref=e1146]:
+                        - generic "Bestway" [ref=e1148]
+                        - paragraph [ref=e1149]: Bestway H2OGO! Rainbow Ribbon Swim Tube
+                    - generic [ref=e1150]:
+                      - generic [ref=e1151]:
+                        - 'img "Rating: 0 out of 5 stars" [ref=e1152]'
+                        - generic [ref=e1163]: (0)
+                      - generic [ref=e1165]:
+                        - paragraph [ref=e1169]: $12
+                        - generic [ref=e1170]:
+                          - button "Add to project list" [ref=e1172] [cursor=pointer]
+                          - button "Add to Cart" [ref=e1177] [cursor=pointer]
+                - list [ref=e1184]:
+                  - listitem [ref=e1185] [cursor=pointer]:
+                    - button "Go to Slide 1" [ref=e1186]
+                  - listitem [ref=e1187] [cursor=pointer]:
+                    - button "Go to Slide 2" [ref=e1188]
+                  - listitem [ref=e1189] [cursor=pointer]:
+                    - button "Go to Slide 3" [ref=e1190]
+                  - listitem [ref=e1191] [cursor=pointer]:
+                    - button "Go to Slide 4" [ref=e1192]
+              - generic [ref=e1193]:
+                - generic [ref=e1196]:
+                  - article [ref=e1198] [cursor=pointer]
+                  - article [ref=e1201] [cursor=pointer]
+                  - article [ref=e1204] [cursor=pointer]
+                  - article [ref=e1207] [cursor=pointer]
+                - list [ref=e1209]:
+                  - listitem [ref=e1210] [cursor=pointer]:
+                    - button "Go to Slide 1" [ref=e1211]
+                  - listitem [ref=e1212] [cursor=pointer]:
+                    - button "Go to Slide 2" [ref=e1213]
+          - link [ref=e1219] [cursor=pointer]:
+            - /url: /bunnings-marketplace
+            - generic [ref=e1220]:
+              - figure [ref=e1223]:
+                - img "Modern living room featuring a curved white bouclé sofa, glass coffee table with sculptural black sphere bases, light timber sideboard, abstract wall art and an arched floor lamp. The space is styled with neutral tones, textured furnishings and contemporary décor on a herringbone wood floor." [ref=e1225]
+              - generic [ref=e1226]:
+                - generic [ref=e1228]:
+                  - heading "In the market for something new? Introducing Bunnings Marketplace" [level=2] [ref=e1229]
+                  - paragraph [ref=e1230]: Discover even more products online with Bunnings Marketplace.
+                - paragraph [ref=e1232]: Shop now
+          - generic [ref=e1237]:
+            - 'heading "Kitchen renovation inspiration: modern heritage kitchen" [level=2] [ref=e1240]'
+            - link "Read article" [ref=e1245] [cursor=pointer]:
+              - /url: /diy-advice/home-improvement/design-inspiration/kitchen-renovation-inspiration-modern-heritage-kitchen
+          - link [ref=e1252] [cursor=pointer]:
+            - /url: /bunnings-2l-halloween-bucket_p1077619
+            - generic [ref=e1253]:
+              - figure [ref=e1256]:
+                - img "Bunnings Halloween bucket with images of ghost and pumpkins on it." [ref=e1258]
+              - generic [ref=e1259]:
+                - generic [ref=e1261]:
+                  - heading "Get trick or treat ready with bunnings" [level=2] [ref=e1262]
+                  - paragraph [ref=e1263]: Our all new Halloween mini bucket has dropped just in time for spooky season
+                - paragraph [ref=e1265]: Shop now
+          - region "Explore D.I.Y. ideas and inspiration" [ref=e1270]:
+            - heading "Explore D.I.Y. ideas and inspiration" [level=2] [ref=e1273]
+            - generic [ref=e1274]:
+              - list [ref=e1276]:
+                - listitem [ref=e1277]:
+                  - link [ref=e1278] [cursor=pointer]:
+                    - /url: /diy-advice/outdoor-living
+                    - figure [ref=e1282]:
+                      - img "After - Outdoor Entertaining Area - Backyard - Wide" [ref=e1284]
+                    - paragraph [ref=e1285]: Outdoor Living
+                - listitem [ref=e1286]:
+                  - link [ref=e1287] [cursor=pointer]:
+                    - /url: /diy-advice/garden
+                    - figure [ref=e1291]:
+                      - img "Product CLP - Garden - Plants" [ref=e1293]
+                    - paragraph [ref=e1294]: Garden Hub
+                - listitem [ref=e1295]:
+                  - link [ref=e1296] [cursor=pointer]:
+                    - /url: /diy-advice/diy-skills
+                    - figure [ref=e1300]:
+                      - img "Blue pegboard wall - Hooks - Shelf - Hanging items - Medium" [ref=e1302]
+                    - paragraph [ref=e1303]: D.I.Y. Skills
+                - listitem [ref=e1304]:
+                  - link [ref=e1305] [cursor=pointer]:
+                    - /url: /diy-advice/home-improvement
+                    - figure [ref=e1309]:
+                      - img "Renovated hallway - Mirror - Floorboards - Shelving - Plants - Wide - Make It Yours - Season 1 - Wide" [ref=e1311]
+                    - paragraph [ref=e1312]: Home Improvement
+                - listitem [ref=e1313]:
+                  - link [ref=e1314] [cursor=pointer]:
+                    - /url: /diy-advice/kids-craft
+                    - figure [ref=e1318]:
+                      - img "Dark blue wall with shelving - Medium" [ref=e1320]
+                    - paragraph [ref=e1321]: Kids & Craft
+                - listitem [ref=e1322]:
+                  - link [ref=e1323] [cursor=pointer]:
+                    - /url: /diy-advice/trending-projects
+                    - figure [ref=e1327]:
+                      - img "Textured wall - Decor - Indoor - Wide" [ref=e1329]
+                    - paragraph [ref=e1330]: Trending Projects
+                - listitem [ref=e1331]:
+                  - link [ref=e1332] [cursor=pointer]:
+                    - /url: /diy-advice/cleaning
+                    - figure [ref=e1336]:
+                      - img "Mop and bucket with table and chairs in a dining area" [ref=e1338]
+                    - paragraph [ref=e1339]: Cleaning
+                - listitem [ref=e1340]:
+                  - link [ref=e1341] [cursor=pointer]:
+                    - /url: /diy-advice/storage
+                    - figure [ref=e1345]:
+                      - img "A large open wardrobe unit with shelves and hanging rails holding clothes, shoes, folded towels, storage boxes, wicker baskets, drawers and boxes on top. A floor lamp stands on the left." [ref=e1347]
+                    - paragraph [ref=e1348]: Storage
+                - listitem [ref=e1349]:
+                  - link [ref=e1350] [cursor=pointer]:
+                    - /url: /diy-advice/paint
+                    - figure [ref=e1354]:
+                      - img "A living room with different paint colours sampled on a wall." [ref=e1356]
+                    - paragraph [ref=e1357]: Paint
+                - listitem [ref=e1358]:
+                  - link [ref=e1359] [cursor=pointer]:
+                    - /url: /diy-advice/garden/planting-and-growing
+                    - figure [ref=e1363]:
+                      - img "Oregano in a pot." [ref=e1365]
+                    - paragraph [ref=e1366]: Planting and growing
+                - listitem [ref=e1367]:
+                  - link [ref=e1368] [cursor=pointer]:
+                    - /url: /diy-advice/building-construction
+                    - figure [ref=e1372]:
+                      - img "House exterior - Backyard - Outdoor entertaining area - Decking - Lawn - Wide" [ref=e1374]
+                    - paragraph [ref=e1375]: Building & Construction
+              - button "Next item" [ref=e1377] [cursor=pointer]
+              - generic [aria-hidden] [ref=e1382] [cursor=pointer]
+          - generic [ref=e1387]:
+            - heading "Get creative with our trending projects" [level=2] [ref=e1391]
+            - generic [ref=e1394]:
+              - generic [ref=e1397]:
+                - article [ref=e1399]:
+                  - link [ref=e1400] [cursor=pointer]:
+                    - /url: /diy-advice/outdoor-living/outdoor-furniture/how-to-choose-the-right-size-patio-furniture
+                    - figure [ref=e1402]:
+                      - img "Outdoor dining table with olive green slatted chairs, on a paved patio in front of white French doors" [ref=e1404]
+                    - generic [ref=e1405]:
+                      - paragraph [ref=e1406]: Outdoor Furniture
+                      - paragraph [ref=e1410]: How to choose the right size patio furniture
+                - article [ref=e1415]:
+                  - link [ref=e1416] [cursor=pointer]:
+                    - /url: /diy-advice/outdoor-living/bbq-smoking/portable-charcoal-or-gas-barbecue-whats-the-difference
+                    - figure [ref=e1418]:
+                      - img "Black barbecue with strawberries and pancakes cooking on a wooden deck" [ref=e1420]
+                    - paragraph [ref=e1425]: "Portable, charcoal or gas barbecue: what’s the difference?"
+                - article [ref=e1430]:
+                  - link [ref=e1431] [cursor=pointer]:
+                    - /url: /diy-advice/home-improvement/design-inspiration/easy-ways-to-improve-indoor-air-quality
+                    - figure [ref=e1433]:
+                      - img "Modern living area with grey sofa, white walls and staircase opening onto grassed area" [ref=e1435]
+                    - generic [ref=e1436]:
+                      - paragraph [ref=e1437]: Design Inspiration
+                      - paragraph [ref=e1441]: Easy ways to improve indoor air quality
+                - article [ref=e1446]:
+                  - link [ref=e1447] [cursor=pointer]:
+                    - /url: /diy-advice/outdoor-living/pets-wildlife/how-to-install-a-portable-doggy-door
+                    - generic [ref=e1448]:
+                      - figure [ref=e1449]:
+                        - img "A portable doggy door in situ" [ref=e1451]
+                      - generic "Contains video. 1 minute 10 seconds." [ref=e1452]:
+                        - paragraph [ref=e1455]:
+                          - time [ref=e1456]: 01:10
+                    - generic [ref=e1457]:
+                      - paragraph [ref=e1458]: Pets & Wildlife
+                      - paragraph [ref=e1462]: How to install a portable doggy door
+                - article [ref=e1467]:
+                  - link [ref=e1468] [cursor=pointer]:
+                    - /url: /diy-advice/garden/lawn/how-to-lay-turf
+                    - generic [ref=e1469]:
+                      - figure [ref=e1470]:
+                        - img "DIY Advice Image - How to lay turf. G Drive blob storage upload." [ref=e1472]
+                      - generic "Contains video. 2 minutes 24 seconds." [ref=e1473]:
+                        - paragraph [ref=e1476]:
+                          - time [ref=e1477]: 02:24
+                    - generic [ref=e1478]:
+                      - paragraph [ref=e1479]: Lawn
+                      - paragraph [ref=e1483]: How to lay turf
+              - list [ref=e1487]:
+                - listitem [ref=e1488] [cursor=pointer]:
+                  - button "Go to Slide 1" [ref=e1489]
+                - listitem [ref=e1490] [cursor=pointer]:
+                  - button "Go to Slide 2" [ref=e1491]
+                - listitem [ref=e1492] [cursor=pointer]:
+                  - button "Go to Slide 3" [ref=e1493]
+          - region "Trending categories this week" [ref=e1495]:
+            - generic [ref=e1496]:
+              - heading "Trending categories this week" [level=2] [ref=e1498]
+              - link "View all categories" [ref=e1500] [cursor=pointer]:
+                - /url: /products
+            - generic [ref=e1502]:
+              - list [ref=e1504]:
+                - listitem [ref=e1505]:
+                  - link [ref=e1506] [cursor=pointer]:
+                    - /url: /products/tools/safety-equipment-workwear/ppe
+                    - figure [ref=e1510]:
+                      - img "Product.Craftright Safety Helmet.0380430.AU.mainimage" [ref=e1512]
+                    - paragraph [ref=e1513]: PPE
+                - listitem [ref=e1514]:
+                  - link [ref=e1515] [cursor=pointer]:
+                    - /url: /products/tools/power-tools
+                    - figure [ref=e1519]:
+                      - img "Product.Ryobi 18V ONE+ Drill Driver Starter Kit.0715241.AU.mainimage" [ref=e1521]
+                    - paragraph [ref=e1522]: Power Tools
+                - listitem [ref=e1523]:
+                  - link [ref=e1524] [cursor=pointer]:
+                    - /url: /products/paint-decorating/paint-accessories/preparation
+                    - figure [ref=e1528]:
+                      - img "Product.Selleys Sugar Soap Wipes - 25 Pack.1210330.NZ.mainimage" [ref=e1530]
+                    - paragraph [ref=e1531]: Paint Preparation
+                - listitem [ref=e1532]:
+                  - link [ref=e1533] [cursor=pointer]:
+                    - /url: /products/storage-cleaning/storage/containers
+                    - figure [ref=e1537]:
+                      - img "Product.All Set 100L Grey And Green Heavy Duty Storage Container With Flat Lid.0406871.NZ.mainimage" [ref=e1539]
+                    - paragraph [ref=e1540]: Storage Containers
+                - listitem [ref=e1541]:
+                  - link [ref=e1542] [cursor=pointer]:
+                    - /url: /products/paint-decorating/paint/interior-paint
+                    - figure [ref=e1546]:
+                      - img "Product.Dulux Wash&Wear Low Sheen Vivid White Interior Paint.Base_0638836.AU.mainimage" [ref=e1548]
+                    - paragraph [ref=e1549]: Interior Paint
+                - listitem [ref=e1550]:
+                  - link [ref=e1551] [cursor=pointer]:
+                    - /url: /products/lighting/indoor-lighting
+                    - figure [ref=e1555]:
+                      - img "Product.Arlec 3m USB RGB Strip Light.0838633.AU.mainimage" [ref=e1557]
+                    - paragraph [ref=e1558]: Indoor Lighting
+                - listitem [ref=e1559]:
+                  - link [ref=e1560] [cursor=pointer]:
+                    - /url: /products/kitchen/small-appliances
+                    - figure [ref=e1564]:
+                      - img "Product.Mistral 4.7L Digital Slow Cooker.1022611.NZ.mainimage" [ref=e1566]
+                    - paragraph [ref=e1567]: Small Appliances
+                - listitem [ref=e1568]:
+                  - link [ref=e1569] [cursor=pointer]:
+                    - /url: /products/electrical-smart-home/smart-home-security
+                    - figure [ref=e1573]:
+                      - img "Product.RING BATTERY VIDEO DOORBELL SATIN NICKEL .0667826.AU.mainimage" [ref=e1575]
+                    - paragraph [ref=e1576]: Smart Home Security
+              - button "Next item" [ref=e1578] [cursor=pointer]
+              - generic [aria-hidden] [ref=e1583] [cursor=pointer]
+          - generic [ref=e1589]:
+            - generic [ref=e1590]:
+              - heading "Leading brands" [level=2] [ref=e1594]
+              - link "View all brands" [ref=e1598] [cursor=pointer]:
+                - /url: /brands
+            - generic [ref=e1605]:
+              - generic [ref=e1607] [cursor=pointer]:
+                - link "Karcher Steam/Vacuum Cleaners & Pressure Washers":
+                  - /url: /brands/k/karcher
+                  - figure:
+                    - generic:
+                      - img "Karcher"
+              - generic [ref=e1609] [cursor=pointer]:
+                - link "Scandia Woodfire Heaters":
+                  - /url: /brands/s/scandia
+                  - figure:
+                    - generic:
+                      - img "Scandia"
+              - generic [ref=e1611] [cursor=pointer]:
+                - link "Mondella":
+                  - /url: /brands/m/mondella
+                  - figure:
+                    - generic:
+                      - img "Mondella"
+              - generic [ref=e1613] [cursor=pointer]:
+                - link "RYOBI":
+                  - /url: /brands/r/ryobi
+                  - figure:
+                    - generic:
+                      - img "Ryobi"
+              - generic [ref=e1615] [cursor=pointer]:
+                - link "Smart Home Products":
+                  - /url: /brands/s/smart-home-products
+                  - figure:
+                    - generic:
+                      - img "Smart Home Products"
+              - generic [ref=e1617] [cursor=pointer]:
+                - link "Kaboodle Kitchen Design":
+                  - /url: /brands/k/kaboodle
+                  - figure:
+                    - generic:
+                      - img "Kaboodle"
+              - generic [ref=e1619] [cursor=pointer]:
+                - link "British Paints":
+                  - /url: /brands/b/british-paints
+                  - figure:
+                    - generic:
+                      - img "British Paints"
+              - generic [ref=e1621] [cursor=pointer]:
+                - link "Energizer":
+                  - /url: /brands/e/energizer
+                  - figure:
+                    - generic:
+                      - img "Energizer"
+              - generic [ref=e1623] [cursor=pointer]:
+                - link "AEG":
+                  - /url: /brands/a/aeg
+                  - figure:
+                    - generic:
+                      - img "AEG"
+              - generic [ref=e1625] [cursor=pointer]:
+                - link "Arlec":
+                  - /url: /brands/a/arlec
+                  - figure:
+                    - generic:
+                      - img "Arlec"
+              - generic [ref=e1627] [cursor=pointer]:
+                - link "Bosch Professional":
+                  - /url: /brands/b/bosch-professional
+                  - figure:
+                    - generic:
+                      - img "Bosch Professional"
+              - generic [ref=e1629] [cursor=pointer]:
+                - link "Cabot's Timber Finishes":
+                  - /url: /brands/c/cabot-s
+                  - figure:
+                    - generic:
+                      - img "Cabots"
+              - generic [ref=e1631] [cursor=pointer]:
+                - link "Daltons":
+                  - /url: /brands/d/daltons
+                  - figure:
+                    - generic:
+                      - img "Daltons"
+              - generic [ref=e1633] [cursor=pointer]:
+                - link "DeWALT Power Tools":
+                  - /url: /brands/d/dewalt
+                  - figure:
+                    - generic:
+                      - img "DEWALT"
+              - generic [ref=e1635] [cursor=pointer]:
+                - link "Dulux Paint & Colours":
+                  - /url: /brands/d/dulux
+                  - figure:
+                    - generic:
+                      - img "Dulux"
+              - generic [ref=e1637] [cursor=pointer]:
+                - link "Foreno":
+                  - /url: /brands/f/foreno
+                  - figure:
+                    - generic:
+                      - img "Foreno"
+              - generic [ref=e1639] [cursor=pointer]:
+                - link "Irwin Tools":
+                  - /url: /brands/i/irwin
+                  - figure:
+                    - generic:
+                      - img "Irwin"
+              - generic [ref=e1641] [cursor=pointer]:
+                - link "James Hardie Wall & Floor Products":
+                  - /url: /brands/j/james-hardie
+                  - figure:
+                    - generic:
+                      - img "James Hardie"
+              - generic [ref=e1643] [cursor=pointer]:
+                - link "Makita Power Tools & Garden Equipment":
+                  - /url: /brands/m/makita
+                  - figure:
+                    - generic:
+                      - img "Makita"
+              - generic [ref=e1645] [cursor=pointer]:
+                - link "Masport Mowers & Outdoor Power Equipment":
+                  - /url: /brands/m/masport
+                  - figure:
+                    - generic:
+                      - img "Masport"
+              - generic [ref=e1647] [cursor=pointer]:
+                - link "Ozito Hand & Power Tools":
+                  - /url: /brands/o/ozito
+                  - figure:
+                    - generic:
+                      - img "Ozito"
+              - generic [ref=e1649] [cursor=pointer]:
+                - link "Philips":
+                  - /url: /brands/p/philips
+                  - figure:
+                    - generic:
+                      - img "Philips"
+              - generic [ref=e1651] [cursor=pointer]:
+                - link "Porter's Paints":
+                  - /url: /brands/p/porter-s-paints
+                  - figure:
+                    - generic:
+                      - img "Porters Paints"
+              - generic [ref=e1653] [cursor=pointer]:
+                - link "Ramset Cavity Wall & Fastening":
+                  - /url: /brands/r/ramset
+                  - figure:
+                    - generic:
+                      - img "Ramset"
+              - generic [ref=e1655] [cursor=pointer]:
+                - link "Schlage Keyless Door locks":
+                  - /url: /brands/s/schlage
+                  - figure:
+                    - generic:
+                      - img "Schlage"
+              - generic [ref=e1657] [cursor=pointer]:
+                - link "Selleys - Adhesives & Sealants":
+                  - /url: /brands/s/selleys
+                  - figure:
+                    - generic:
+                      - img "Selleys"
+              - generic [ref=e1659] [cursor=pointer]:
+                - link "Stanley Hand & Power Tools":
+                  - /url: /brands/s/stanley
+                  - figure:
+                    - generic:
+                      - img "Stanley"
+              - generic [ref=e1661] [cursor=pointer]:
+                - link "Victa Garden Power Tools":
+                  - /url: /brands/v/victa
+                  - figure:
+                    - generic:
+                      - img "VICTA"
+              - generic [ref=e1663] [cursor=pointer]:
+                - link "Yates Gardening Products":
+                  - /url: /brands/y/yates
+                  - figure:
+                    - generic:
+                      - img "Yates"
+          - generic [ref=e1666]:
+            - link "Van & Ute Hire" [ref=e1667] [cursor=pointer]:
+              - /url: /services/in-store/vehicle-hire
+              - generic [ref=e1668]:
+                - generic [ref=e1669]:
+                  - heading "Van & Ute Hire" [level=3] [ref=e1672]
+                  - paragraph [ref=e1673]: Our utes and vans can help you get your products home safely and securely.
+                - generic [ref=e1674]: Hire now
+              - figure [ref=e1678]:
+                - img "White rental van with “Load & Go” signage parked in front of a Bunnings Warehouse store exterior on a clear day." [ref=e1680]
+            - link "Find & book a D.I.Y. workshop or activity" [ref=e1681] [cursor=pointer]:
+              - /url: /services/in-store/diy-workshops
+              - figure [ref=e1683]:
+                - img "Team member assisting with D.I.Y. Workshop" [ref=e1685]
+              - generic [ref=e1686]:
+                - heading "Find & book a D.I.Y. workshop or activity" [level=3] [ref=e1687]
+                - generic [ref=e1689]:
+                  - generic [ref=e1690]: Book now
+                  - img "carouselNext" [ref=e1692]
+            - link "Check out the Bunnings magazine" [ref=e1695] [cursor=pointer]:
+              - /url: /bunnings-magazine
+              - figure [ref=e1697]:
+                - img "Styled bedroom with teal walls, wooden bed, and cushions, alongside Bunnings Warehouse Winter 2026 magazine cover and contents page displayed on a chair." [ref=e1699]
+              - generic [ref=e1700]:
+                - heading "Check out the Bunnings magazine" [level=3] [ref=e1701]
+                - generic [ref=e1703]:
+                  - generic [ref=e1704]: Read now
+                  - img "carouselNext" [ref=e1706]
+            - link "Where you find a competitor's lower price on the same in-stock item, we'll beat it by 15%*. *Conditions and Exclusions Apply which you can read more about here. View Price Policy" [ref=e1709] [cursor=pointer]:
+              - /url: /policies/price-policy
+              - generic [ref=e1710]:
+                - figure [ref=e1713]:
+                  - img "Price guarantee we'll beat it by 15%. Exclusions and conditions apply. See website and in-store for details." [ref=e1715]
+                - generic [ref=e1716]:
+                  - heading "Where you find a competitor's lower price on the same in-stock item, we'll beat it by 15%*." [level=2] [ref=e1719]
+                  - heading "*Conditions and Exclusions Apply which you can read more about here." [level=4] [ref=e1721]
+                - generic [ref=e1722]: View Price Policy
+          - generic [ref=e1726]:
+            - heading "View our range of popular products" [level=2] [ref=e1732]
+            - tabpanel [ref=e1735]:
+              - generic [ref=e1736]:
+                - generic [ref=e1739]:
+                  - generic [ref=e1742]:
+                    - link "Marquee 3 Piece Lamai Wicker Corner Sofa, 4.3 stars from 129 reviews, Price $369.00" [ref=e1743] [cursor=pointer]:
+                      - /url: /marquee-3-piece-lamai-wicker-corner-sofa_p0572402
+                      - figure [ref=e1746]:
+                        - img "Marquee 3 Piece Lamai Wicker Corner Sofa" [ref=e1748]
+                      - generic [ref=e1750]:
+                        - generic "Marquee" [ref=e1752]
+                        - paragraph [ref=e1753]: Marquee 3 Piece Lamai Wicker Corner Sofa
+                    - generic [ref=e1754]:
+                      - generic [ref=e1755]:
+                        - generic [ref=e1756]: "4.3"
+                        - 'img "Rating: 4.3 out of 5 stars" [ref=e1757]'
+                        - generic [ref=e1768]: (129)
+                      - generic [ref=e1770]:
+                        - paragraph [ref=e1774]: $369
+                        - generic [ref=e1775]:
+                          - button "Add to project list" [ref=e1777] [cursor=pointer]
+                          - button "Add to Cart" [ref=e1782] [cursor=pointer]
+                  - generic [ref=e1791]:
+                    - link "Marquee 4 Piece Soho Lounge Setting, 4.3 stars from 9 reviews, Price $589.00" [ref=e1792] [cursor=pointer]:
+                      - /url: /marquee-4-piece-soho-lounge-setting_p0579419
+                      - figure [ref=e1795]:
+                        - img "Marquee 4 Piece Soho Lounge Setting" [ref=e1797]
+                      - generic [ref=e1799]:
+                        - generic "Marquee" [ref=e1801]
+                        - paragraph [ref=e1802]: Marquee 4 Piece Soho Lounge Setting
+                    - generic [ref=e1803]:
+                      - generic [ref=e1804]:
+                        - generic [ref=e1805]: "4.3"
+                        - 'img "Rating: 4.3 out of 5 stars" [ref=e1806]'
+                        - generic [ref=e1817]: (9)
+                      - generic [ref=e1819]:
+                        - paragraph [ref=e1823]: $589
+                        - generic [ref=e1824]:
+                          - button "Add to project list" [ref=e1826] [cursor=pointer]
+                          - button "Add to Cart" [ref=e1831] [cursor=pointer]
+                  - generic [ref=e1840]:
+                    - link "Jumbuck 2 Burner Portable Gas BBQ, 4.5 stars from 27 reviews, Price $259.00" [ref=e1841] [cursor=pointer]:
+                      - /url: /jumbuck-2-burner-portable-gas-bbq_p0434419
+                      - figure [ref=e1844]:
+                        - img "Jumbuck 2 Burner Portable Gas BBQ" [ref=e1846]
+                      - generic [ref=e1848]:
+                        - generic "Jumbuck" [ref=e1850]
+                        - paragraph [ref=e1851]: Jumbuck 2 Burner Portable Gas BBQ
+                    - generic [ref=e1852]:
+                      - generic [ref=e1853]:
+                        - generic [ref=e1854]: "4.5"
+                        - 'img "Rating: 4.5 out of 5 stars" [ref=e1855]'
+                        - generic [ref=e1866]: (27)
+                      - generic [ref=e1868]:
+                        - paragraph [ref=e1872]: $259
+                        - generic [ref=e1873]:
+                          - button "Add to project list" [ref=e1875] [cursor=pointer]
+                          - button "Add to Cart" [ref=e1880] [cursor=pointer]
+                  - generic [ref=e1889]:
+                    - link "Marquee 7 Piece Dining Setting, 4.2 stars from 61 reviews, Price $399.00" [ref=e1890] [cursor=pointer]:
+                      - /url: /marquee-7-piece-dining-setting_p0579410
+                      - figure [ref=e1893]:
+                        - img "Marquee 7 Piece Dining Setting" [ref=e1895]
+                      - generic [ref=e1897]:
+                        - generic "Marquee" [ref=e1899]
+                        - paragraph [ref=e1900]: Marquee 7 Piece Dining Setting
+                    - generic [ref=e1901]:
+                      - generic [ref=e1902]:
+                        - generic [ref=e1903]: "4.2"
+                        - 'img "Rating: 4.2 out of 5 stars" [ref=e1904]'
+                        - generic [ref=e1915]: (61)
+                      - generic [ref=e1917]:
+                        - paragraph [ref=e1921]: $399
+                        - generic [ref=e1922]:
+                          - button "Add to project list" [ref=e1924] [cursor=pointer]
+                          - button "Add to Cart" [ref=e1929] [cursor=pointer]
+                  - generic [ref=e1938]:
+                    - link "Marquee Grey Steel Sling Back 7 Piece Setting, 4.2 stars from 587 reviews, Price $299.00" [ref=e1939] [cursor=pointer]:
+                      - /url: /marquee-grey-steel-sling-back-7-piece-setting_p3191814
+                      - figure [ref=e1942]:
+                        - img "Marquee Grey Steel Sling Back 7 Piece Setting" [ref=e1944]
+                      - generic [ref=e1946]:
+                        - generic "Marquee" [ref=e1948]
+                        - paragraph [ref=e1949]: Marquee Grey Steel Sling Back 7 Piece Setting
+                    - generic [ref=e1950]:
+                      - generic [ref=e1951]:
+                        - generic [ref=e1952]: "4.2"
+                        - 'img "Rating: 4.2 out of 5 stars" [ref=e1953]'
+                        - generic [ref=e1964]: (587)
+                      - generic [ref=e1966]:
+                        - paragraph [ref=e1970]: $299
+                        - generic [ref=e1971]:
+                          - button "Add to project list" [ref=e1973] [cursor=pointer]
+                          - button "Add to Cart" [ref=e1978] [cursor=pointer]
+                  - generic [ref=e1987]:
+                    - link "Marquee Oasis 4 Piece Timber Outdoor Lounge Setting, 4.7 stars from 3 reviews, Price $549.00" [ref=e1988] [cursor=pointer]:
+                      - /url: /marquee-oasis-4-piece-timber-outdoor-lounge-setting_p0756699
+                      - figure [ref=e1991]:
+                        - img "Marquee Oasis 4 Piece Timber Outdoor Lounge Setting" [ref=e1993]
+                      - generic [ref=e1995]:
+                        - generic "Marquee" [ref=e1997]
+                        - paragraph [ref=e1998]: Marquee Oasis 4 Piece Timber Outdoor Lounge Setting
+                    - generic [ref=e1999]:
+                      - generic [ref=e2000]:
+                        - generic [ref=e2001]: "4.7"
+                        - 'img "Rating: 4.7 out of 5 stars" [ref=e2002]'
+                        - generic [ref=e2013]: (3)
+                      - generic [ref=e2015]:
+                        - paragraph [ref=e2019]: $549
+                        - generic [ref=e2020]:
+                          - button "Add to project list" [ref=e2022] [cursor=pointer]
+                          - button "Add to Cart" [ref=e2027] [cursor=pointer]
+                  - generic [ref=e2036]:
+                    - link "Mimosa Fornillo 3 Seater Outdoor Lounge, NEW, 4.8 stars from 6 reviews, Price $969.00" [ref=e2037] [cursor=pointer]:
+                      - /url: /mimosa-fornillo-3-seater-outdoor-lounge_p1054861
+                      - figure [ref=e2040]:
+                        - img "Mimosa Fornillo 3 Seater Outdoor Lounge" [ref=e2042]
+                      - generic [ref=e2044]:
+                        - generic [ref=e2045]: NEW
+                        - generic "Mimosa" [ref=e2049]
+                        - paragraph [ref=e2050]: Mimosa Fornillo 3 Seater Outdoor Lounge
+                    - generic [ref=e2051]:
+                      - generic [ref=e2052]:
+                        - generic [ref=e2053]: "4.8"
+                        - 'img "Rating: 4.8 out of 5 stars" [ref=e2054]'
+                        - generic [ref=e2065]: (6)
+                      - generic [ref=e2067]:
+                        - paragraph [ref=e2071]: $969
+                        - generic [ref=e2072]:
+                          - button "Add to project list" [ref=e2074] [cursor=pointer]
+                          - button "Add to Cart" [ref=e2079] [cursor=pointer]
+                  - generic [ref=e2088]:
+                    - link "RYOBI 36V HP Brushless 46cm Lawn Mower 4Ah Kit R36LMW34, 4.8 stars from 42 reviews, Price $499.00" [ref=e2089] [cursor=pointer]:
+                      - /url: /ryobi-36v-hp-brushless-46cm-lawn-mower-4ah-kit-r36lmw34_p1083169
+                      - figure [ref=e2092]:
+                        - img "RYOBI 36V HP Brushless 46cm Lawn Mower 4Ah Kit R36LMW34" [ref=e2094]
+                      - generic [ref=e2096]:
+                        - generic "Ryobi Lithium+ 36V" [ref=e2098]
+                        - paragraph [ref=e2099]: RYOBI 36V HP Brushless 46cm Lawn Mower 4Ah Kit R36LMW34
+                    - generic [ref=e2100]:
+                      - generic [ref=e2101]:
+                        - generic [ref=e2102]: "4.8"
+                        - 'img "Rating: 4.8 out of 5 stars" [ref=e2103]'
+                        - generic [ref=e2114]: (42)
+                      - generic [ref=e2116]:
+                        - paragraph [ref=e2120]: $499
+                        - generic [ref=e2121]:
+                          - button "Add to project list" [ref=e2123] [cursor=pointer]
+                          - button "Add to Cart" [ref=e2128] [cursor=pointer]
+                  - generic [ref=e2137]:
+                    - link "Marquee 1450 x 750 x 750mm Timber Dining Set, 3.8 stars from 57 reviews, Price $240.00" [ref=e2138] [cursor=pointer]:
+                      - /url: /marquee-1450-x-750-x-750mm-timber-dining-set_p0594445
+                      - figure [ref=e2141]:
+                        - img "Marquee 1450 x 750 x 750mm Timber Dining Set" [ref=e2143]
+                      - generic [ref=e2145]:
+                        - generic "Marquee" [ref=e2147]
+                        - paragraph [ref=e2148]: Marquee 1450 x 750 x 750mm Timber Dining Set
+                    - generic [ref=e2149]:
+                      - generic [ref=e2150]:
+                        - generic [ref=e2151]: "3.8"
+                        - 'img "Rating: 3.8 out of 5 stars" [ref=e2152]'
+                        - generic [ref=e2163]: (57)
+                      - generic [ref=e2165]:
+                        - paragraph [ref=e2169]: $240
+                        - generic [ref=e2170]:
+                          - button "Add to project list" [ref=e2172] [cursor=pointer]
+                          - button "Add to Cart" [ref=e2177] [cursor=pointer]
+                  - generic [ref=e2186]:
+                    - link "Jumbuck 4 Burner Portland Hooded Gas BBQ, 3.5 stars from 55 reviews, Price $248.00" [ref=e2187] [cursor=pointer]:
+                      - /url: /jumbuck-4-burner-portland-hooded-gas-bbq_p0577639
+                      - figure [ref=e2190]:
+                        - img "Jumbuck 4 Burner Portland Hooded Gas BBQ" [ref=e2192]
+                      - generic [ref=e2194]:
+                        - generic "Jumbuck" [ref=e2196]
+                        - paragraph [ref=e2197]: Jumbuck 4 Burner Portland Hooded Gas BBQ
+                    - generic [ref=e2198]:
+                      - generic [ref=e2199]:
+                        - generic [ref=e2200]: "3.5"
+                        - 'img "Rating: 3.5 out of 5 stars" [ref=e2201]'
+                        - generic [ref=e2212]: (55)
+                      - generic [ref=e2214]:
+                        - paragraph [ref=e2218]: $248
+                        - generic [ref=e2219]:
+                          - button "Add to project list" [ref=e2221] [cursor=pointer]
+                          - button "Add to Cart" [ref=e2226] [cursor=pointer]
+                  - generic [ref=e2235]:
+                    - link "Marquee 5 Piece Conversation Setting, 4.6 stars from 8 reviews, Price $429.00" [ref=e2236] [cursor=pointer]:
+                      - /url: /marquee-5-piece-conversation-setting_p0800203
+                      - figure [ref=e2239]:
+                        - img "Marquee 5 Piece Conversation Setting" [ref=e2241]
+                      - generic [ref=e2243]:
+                        - generic "Marquee" [ref=e2245]
+                        - paragraph [ref=e2246]: Marquee 5 Piece Conversation Setting
+                    - generic [ref=e2247]:
+                      - generic [ref=e2248]:
+                        - generic [ref=e2249]: "4.6"
+                        - 'img "Rating: 4.6 out of 5 stars" [ref=e2250]'
+                        - generic [ref=e2261]: (8)
+                      - generic [ref=e2263]:
+                        - paragraph [ref=e2267]: $429
+                        - generic [ref=e2268]:
+                          - button "Add to project list" [ref=e2270] [cursor=pointer]
+                          - button "Add to Cart" [ref=e2275] [cursor=pointer]
+                  - generic [ref=e2284]:
+                    - link "Mirabella 2.1m Scarlet Pink Pre-Lit Christmas Tree, Price $269.00" [ref=e2285] [cursor=pointer]:
+                      - /url: /mirabella-2-1m-scarlet-pink-pre-lit-christmas-tree_p1056276
+                      - figure [ref=e2288]:
+                        - img "Mirabella 2.1m Scarlet Pink Pre-Lit Christmas Tree" [ref=e2290]
+                      - generic [ref=e2292]:
+                        - generic "Mirabella" [ref=e2294]
+                        - paragraph [ref=e2295]: Mirabella 2.1m Scarlet Pink Pre-Lit Christmas Tree
+                    - generic [ref=e2296]:
+                      - generic [ref=e2297]:
+                        - 'img "Rating: 0 out of 5 stars" [ref=e2298]'
+                        - generic [ref=e2309]: (0)
+                      - generic [ref=e2311]:
+                        - paragraph [ref=e2315]: $269
+                        - generic [ref=e2316]:
+                          - button "Add to project list" [ref=e2318] [cursor=pointer]
+                          - button "Add to Cart" [ref=e2323] [cursor=pointer]
+                - list [ref=e2330]:
+                  - listitem [ref=e2331] [cursor=pointer]:
+                    - button "Go to Slide 1" [ref=e2332]
+                  - listitem [ref=e2333] [cursor=pointer]:
+                    - button "Go to Slide 2" [ref=e2334]
+                  - listitem [ref=e2335] [cursor=pointer]:
+                    - button "Go to Slide 3" [ref=e2336]
+              - generic [ref=e2337]:
+                - generic [ref=e2340]:
+                  - article [ref=e2342] [cursor=pointer]
+                  - article [ref=e2345] [cursor=pointer]
+                  - article [ref=e2348] [cursor=pointer]
+                  - article [ref=e2351] [cursor=pointer]
+                - list [ref=e2353]:
+                  - listitem [ref=e2354] [cursor=pointer]:
+                    - button "Go to Slide 1" [ref=e2355]
+                  - listitem [ref=e2356] [cursor=pointer]:
+                    - button "Go to Slide 2" [ref=e2357]
+          - generic [ref=e2361]:
+            - generic [ref=e2366]:
+              - paragraph [ref=e2367]:
+                - img "Icon - (AS PNG not SVG) - Services - Shop Online" [ref=e2368]
+              - heading "Shop online any way you choose" [level=3] [ref=e2369]
+              - paragraph [ref=e2370]: Shop products online from our wide range. Access same day* Click & Collect or choose Click & Deliver and select from a range of delivery services to get your order home that suit your needs.
+              - paragraph [ref=e2371]:
+                - strong [ref=e2372]:
+                  - link "Learn more" [ref=e2373] [cursor=pointer]:
+                    - /url: /help-centre/shop-online
+            - generic [ref=e2378]:
+              - paragraph [ref=e2379]:
+                - img "Icon - (AS PNG not SVG) - Services - Gift Card" [ref=e2380]
+              - 'heading "eGift Cards: fast and thoughtful gifting" [level=3] [ref=e2381]'
+              - paragraph [ref=e2382]: Experience ultimate convenience with our eGift Cards—delivered instantly or scheduled for a future date. Personalise with custom designs and messages. A meaningful gift that’s always appreciated.
+              - paragraph [ref=e2383]:
+                - link "Shop eGift cards" [ref=e2384] [cursor=pointer]:
+                  - /url: /gift-cards
+            - generic [ref=e2389]:
+              - paragraph [ref=e2390]:
+                - img "Icon - (AS PNG not SVG) - Services - DIY Advice" [ref=e2391]
+              - heading "Projects everyone’s loving this week" [level=3] [ref=e2392]
+              - paragraph [ref=e2393]: Find what’s trending for the weekend. From quick weekend wins to great‑value upgrades, our trending projects include practical ideas, products you need and tips to help you get started with confidence.
+              - paragraph [ref=e2394]:
+                - link "Explore trending projects" [ref=e2395] [cursor=pointer]:
+                  - /url: /diy-advice/trending-projects
+          - generic [ref=e2398]:
+            - generic [ref=e2399]:
+              - link [ref=e2401] [cursor=pointer]:
+                - /url: https://workshop.bunnings.com.au
+                - img "Logo - Workshop - Bunnings Branded - Transparent" [ref=e2402]
+              - generic [ref=e2403]:
+                - generic [ref=e2404]:
+                  - link [ref=e2405] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/about-workshop
+                    - img "Icon - Website - Workshop lightbulb" [ref=e2406]
+                    - text: Get Inspired
+                  - link [ref=e2407] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/about-workshop
+                    - img "Questions" [ref=e2408]
+                    - text: Ask Questions
+                  - link [ref=e2409] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/about-workshop
+                    - img "Speech bubbles" [ref=e2410]
+                    - text: Share Projects
+                - generic [ref=e2411]: Bunnings Workshop is an online community for D.I.Y. and gardening discussion, advice and inspiration.
+              - link [ref=e2414] [cursor=pointer]:
+                - /url: https://www.workshop.bunnings.com.au/
+                - img "opens in new window" [ref=e2415]
+                - text: Join the discussion
+            - generic [ref=e2417]:
+              - separator [ref=e2418]
+              - heading "Get inspired by projects from the Bunnings Workshop community" [level=2] [ref=e2423]
+              - generic [ref=e2424]:
+                - generic [ref=e2427]:
+                  - link "Corner pergola with screening and swing Posted by jessejujitsu like-icon 4 comment-icon 1 A backyard haven with a pergola and swinging bench created in a garden corner using timber and composite screening panels. The projectStepsTools ... link-outContinue reading" [ref=e2430] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/discussion/331036?tab=all
+                    - figure [ref=e2431]:
+                      - img "Corner pergola with screening and swing" [ref=e2433]
+                    - generic [ref=e2434]:
+                      - heading "Corner pergola with screening and swing" [level=3] [ref=e2436]
+                      - generic [ref=e2437]:
+                        - generic [ref=e2438]: Posted by jessejujitsu
+                        - generic [ref=e2439]:
+                          - img "like-icon" [ref=e2440]
+                          - generic [ref=e2442]: "4"
+                          - img "comment-icon" [ref=e2443]
+                          - generic [ref=e2445]: "1"
+                      - generic [ref=e2446]: A backyard haven with a pergola and swinging bench created in a garden corner using timber and composite screening panels. The projectStepsTools ...
+                      - generic [ref=e2447]:
+                        - img "link-out" [ref=e2448]
+                        - text: Continue reading
+                  - link "Fenced vegetable garden with raised beds Posted by Wheats like-icon 10 comment-icon 7 A large vegetable garden with raised beds surrounded by wire and timber fencing. The projectTools and materialsStepsHow to build a raised garden... link-outContinue reading" [ref=e2452] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/discussion/184581?tab=all
+                    - figure [ref=e2453]:
+                      - img "Fenced vegetable garden with raised beds" [ref=e2455]
+                    - generic [ref=e2456]:
+                      - heading "Fenced vegetable garden with raised beds" [level=3] [ref=e2458]
+                      - generic [ref=e2459]:
+                        - generic [ref=e2460]: Posted by Wheats
+                        - generic [ref=e2461]:
+                          - img "like-icon" [ref=e2462]
+                          - generic [ref=e2464]: "10"
+                          - img "comment-icon" [ref=e2465]
+                          - generic [ref=e2467]: "7"
+                      - generic [ref=e2468]: A large vegetable garden with raised beds surrounded by wire and timber fencing. The projectTools and materialsStepsHow to build a raised garden...
+                      - generic [ref=e2469]:
+                        - img "link-out" [ref=e2470]
+                        - text: Continue reading
+                  - link "Top 10 most popular projects of the year Posted by Jason like-icon 5 comment-icon 5 For over a decade, clever and creative Bunnings Workshop members have been sharing their inspiring home improvement projects with our community. ... link-outContinue reading" [ref=e2474] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/discussion/331904?tab=all
+                    - figure [ref=e2475]:
+                      - img "Top 10 most popular projects of the year" [ref=e2477]
+                    - generic [ref=e2478]:
+                      - heading "Top 10 most popular projects of the year" [level=3] [ref=e2480]
+                      - generic [ref=e2481]:
+                        - generic [ref=e2482]: Posted by Jason
+                        - generic [ref=e2483]:
+                          - img "like-icon" [ref=e2484]
+                          - generic [ref=e2486]: "5"
+                          - img "comment-icon" [ref=e2487]
+                          - generic [ref=e2489]: "5"
+                      - generic [ref=e2490]: For over a decade, clever and creative Bunnings Workshop members have been sharing their inspiring home improvement projects with our community. ...
+                      - generic [ref=e2491]:
+                        - img "link-out" [ref=e2492]
+                        - text: Continue reading
+                  - link "How to fix a muddy lawn Posted by Adam_W like-icon 3 comment-icon 0 Drainage problems can quickly turn a beautiful-looking lawn into an unsightly mud pit. Here’s our guide to fixing a muddy lawn. You can also chec... link-outContinue reading" [ref=e2496] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/discussion/97196
+                    - figure [ref=e2497]:
+                      - img "How to fix a muddy lawn" [ref=e2499]
+                    - generic [ref=e2500]:
+                      - heading "How to fix a muddy lawn" [level=3] [ref=e2502]
+                      - generic [ref=e2503]:
+                        - generic [ref=e2504]: Posted by Adam_W
+                        - generic [ref=e2505]:
+                          - img "like-icon" [ref=e2506]
+                          - generic [ref=e2508]: "3"
+                          - img "comment-icon" [ref=e2509]
+                          - generic [ref=e2511]: "0"
+                      - generic [ref=e2512]: Drainage problems can quickly turn a beautiful-looking lawn into an unsightly mud pit. Here’s our guide to fixing a muddy lawn. You can also chec...
+                      - generic [ref=e2513]:
+                        - img "link-out" [ref=e2514]
+                        - text: Continue reading
+                  - link "D.I.Y. sunken fire pit with seating Posted by ashleesellen like-icon 12 comment-icon 13 My partner and I built a beautiful sunken fire pit/conversation pit using decking boards, concrete blocks and white pebbles. It’s perfect for roasting... link-outContinue reading" [ref=e2518] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/discussion/159669
+                    - figure [ref=e2519]:
+                      - img "D.I.Y. sunken fire pit with seating" [ref=e2521]
+                    - generic [ref=e2522]:
+                      - heading "D.I.Y. sunken fire pit with seating" [level=3] [ref=e2524]
+                      - generic [ref=e2525]:
+                        - generic [ref=e2526]: Posted by ashleesellen
+                        - generic [ref=e2527]:
+                          - img "like-icon" [ref=e2528]
+                          - generic [ref=e2530]: "12"
+                          - img "comment-icon" [ref=e2531]
+                          - generic [ref=e2533]: "13"
+                      - generic [ref=e2534]: My partner and I built a beautiful sunken fire pit/conversation pit using decking boards, concrete blocks and white pebbles. It’s perfect for roasting...
+                      - generic [ref=e2535]:
+                        - img "link-out" [ref=e2536]
+                        - text: Continue reading
+                  - 'link "How to build a console table Posted by MitchellMc like-icon 7 comment-icon 3 Difficulty: Beginner Console, hallway or entryway tables are a great way to add style and storage to your space. Building these narrow tables is ... link-outContinue reading" [ref=e2540] [cursor=pointer]':
+                    - /url: https://www.workshop.bunnings.com.au/discussion/166419
+                    - figure [ref=e2541]:
+                      - img "How to build a console table" [ref=e2543]
+                    - generic [ref=e2544]:
+                      - heading "How to build a console table" [level=3] [ref=e2546]
+                      - generic [ref=e2547]:
+                        - generic [ref=e2548]: Posted by MitchellMc
+                        - generic [ref=e2549]:
+                          - img "like-icon" [ref=e2550]
+                          - generic [ref=e2552]: "7"
+                          - img "comment-icon" [ref=e2553]
+                          - generic [ref=e2555]: "3"
+                      - generic [ref=e2556]: "Difficulty: Beginner Console, hallway or entryway tables are a great way to add style and storage to your space. Building these narrow tables is ..."
+                      - generic [ref=e2557]:
+                        - img "link-out" [ref=e2558]
+                        - text: Continue reading
+                  - link "Guest room oasis with feature wall Posted by Coffeebeanlilly like-icon 3 comment-icon 1 As first-time homeowners, we couldn’t wait to get started on renovating our little 90’s fixer-upper. Despite the house being well built and in great s... link-outContinue reading" [ref=e2562] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/discussion/113166?tab=all
+                    - figure [ref=e2563]:
+                      - img "Guest room oasis with feature wall" [ref=e2565]
+                    - generic [ref=e2566]:
+                      - heading "Guest room oasis with feature wall" [level=3] [ref=e2568]
+                      - generic [ref=e2569]:
+                        - generic [ref=e2570]: Posted by Coffeebeanlilly
+                        - generic [ref=e2571]:
+                          - img "like-icon" [ref=e2572]
+                          - generic [ref=e2574]: "3"
+                          - img "comment-icon" [ref=e2575]
+                          - generic [ref=e2577]: "1"
+                      - generic [ref=e2578]: As first-time homeowners, we couldn’t wait to get started on renovating our little 90’s fixer-upper. Despite the house being well built and in great s...
+                      - generic [ref=e2579]:
+                        - img "link-out" [ref=e2580]
+                        - text: Continue reading
+                  - link "Hamptons-inspired bathroom renovation Posted by lissett like-icon 8 comment-icon 3 Hampton's Inspired BathroomThe original bathroom was outdated and falling apart. We changed the layout slightly to include a luxurious bathtub and co.... link-outContinue reading" [ref=e2584] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/discussion/218631
+                    - figure [ref=e2585]:
+                      - img "Hamptons-inspired bathroom renovation" [ref=e2587]
+                    - generic [ref=e2588]:
+                      - heading "Hamptons-inspired bathroom renovation" [level=3] [ref=e2590]
+                      - generic [ref=e2591]:
+                        - generic [ref=e2592]: Posted by lissett
+                        - generic [ref=e2593]:
+                          - img "like-icon" [ref=e2594]
+                          - generic [ref=e2596]: "8"
+                          - img "comment-icon" [ref=e2597]
+                          - generic [ref=e2599]: "3"
+                      - generic [ref=e2600]: Hampton's Inspired BathroomThe original bathroom was outdated and falling apart. We changed the layout slightly to include a luxurious bathtub and co....
+                      - generic [ref=e2601]:
+                        - img "link-out" [ref=e2602]
+                        - text: Continue reading
+                  - link "Luxury D.I.Y. bathroom renovation with bathtub Posted by homeinmelbourne like-icon 16 comment-icon 12 This stunning bathroom makeover features brass shower hardware, frameless shower screens and stylish tiling. The projectDemolitionInstallationTilin... link-outContinue reading" [ref=e2606] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/discussion/123304?tab=all
+                    - figure [ref=e2607]:
+                      - img "Luxury D.I.Y. bathroom renovation with bathtub" [ref=e2609]
+                    - generic [ref=e2610]:
+                      - heading "Luxury D.I.Y. bathroom renovation with bathtub" [level=3] [ref=e2612]
+                      - generic [ref=e2613]:
+                        - generic [ref=e2614]: Posted by homeinmelbourne
+                        - generic [ref=e2615]:
+                          - img "like-icon" [ref=e2616]
+                          - generic [ref=e2618]: "16"
+                          - img "comment-icon" [ref=e2619]
+                          - generic [ref=e2621]: "12"
+                      - generic [ref=e2622]: This stunning bathroom makeover features brass shower hardware, frameless shower screens and stylish tiling. The projectDemolitionInstallationTilin...
+                      - generic [ref=e2623]:
+                        - img "link-out" [ref=e2624]
+                        - text: Continue reading
+                  - 'link "How to restore a wooden armchair Posted by Nham like-icon 7 comment-icon 4 Difficulty: Beginner Restoring a wooden armchair is a simple project that can extend the life of a comfortable chair that’s beginning to show its... link-outContinue reading" [ref=e2628] [cursor=pointer]':
+                    - /url: https://www.workshop.bunnings.com.au/discussion/104963
+                    - figure [ref=e2629]:
+                      - img "How to restore a wooden armchair" [ref=e2631]
+                    - generic [ref=e2632]:
+                      - heading "How to restore a wooden armchair" [level=3] [ref=e2634]
+                      - generic [ref=e2635]:
+                        - generic [ref=e2636]: Posted by Nham
+                        - generic [ref=e2637]:
+                          - img "like-icon" [ref=e2638]
+                          - generic [ref=e2640]: "7"
+                          - img "comment-icon" [ref=e2641]
+                          - generic [ref=e2643]: "4"
+                      - generic [ref=e2644]: "Difficulty: Beginner Restoring a wooden armchair is a simple project that can extend the life of a comfortable chair that’s beginning to show its..."
+                      - generic [ref=e2645]:
+                        - img "link-out" [ref=e2646]
+                        - text: Continue reading
+                  - link "Top 10 most popular garden makeovers Posted by Jason like-icon 2 comment-icon 0 A garden can be a relaxing oasis and a wonderful place to enjoy time with friends and family. But if your backyard or front garden has been negle... link-outContinue reading" [ref=e2650] [cursor=pointer]:
+                    - /url: https://www.workshop.bunnings.com.au/discussion/183317?tab=all
+                    - figure [ref=e2651]:
+                      - img "Top 10 most popular garden makeovers" [ref=e2653]
+                    - generic [ref=e2654]:
+                      - heading "Top 10 most popular garden makeovers" [level=3] [ref=e2656]
+                      - generic [ref=e2657]:
+                        - generic [ref=e2658]: Posted by Jason
+                        - generic [ref=e2659]:
+                          - img "like-icon" [ref=e2660]
+                          - generic [ref=e2662]: "2"
+                          - img "comment-icon" [ref=e2663]
+                          - generic [ref=e2665]: "0"
+                      - generic [ref=e2666]: A garden can be a relaxing oasis and a wonderful place to enjoy time with friends and family. But if your backyard or front garden has been negle...
+                      - generic [ref=e2667]:
+                        - img "link-out" [ref=e2668]
+                        - text: Continue reading
+                - button "Previous" [disabled] [ref=e2670] [cursor=pointer]
+                - button "Next" [ref=e2674] [cursor=pointer]
+      - contentinfo [ref=e2679]:
+        - generic [ref=e2683]:
+          - button "go to top" [ref=e2684] [cursor=pointer]:
+            - img "go to top" [ref=e2685]
+          - button [ref=e2689] [cursor=pointer]:
+            - heading "Customer Service" [level=4] [ref=e2690]
+            - img "to expand" [ref=e2691]
+          - button [ref=e2696] [cursor=pointer]:
+            - heading "Services" [level=4] [ref=e2697]
+            - img "to expand" [ref=e2698]
+          - button [ref=e2703] [cursor=pointer]:
+            - heading "About Bunnings" [level=4] [ref=e2704]
+            - img "to expand" [ref=e2705]
+        - generic [ref=e2708]:
+          - list [ref=e2712]:
+            - listitem [ref=e2713]:
+              - link "Community" [ref=e2714] [cursor=pointer]:
+                - /url: /about-us/in-our-community
+            - listitem [ref=e2715]:
+              - link "Contact Us" [ref=e2716] [cursor=pointer]:
+                - /url: /contact-us
+            - listitem [ref=e2717]:
+              - link "Feedback" [ref=e2718] [cursor=pointer]:
+                - /url: "#open-feedback-form"
+            - listitem [ref=e2719]:
+              - link "Careers" [ref=e2720] [cursor=pointer]:
+                - /url: /jobs
+          - generic [ref=e2722]:
+            - list [ref=e2724]:
+              - listitem [ref=e2725]:
+                - link [ref=e2726] [cursor=pointer]:
+                  - /url: /help-centre/shop-online
+                  - img "Visa" [ref=e2727]
+              - listitem [ref=e2728]:
+                - link [ref=e2729] [cursor=pointer]:
+                  - /url: /help-centre/shop-online
+                  - img "Mastercard" [ref=e2730]
+              - listitem [ref=e2731]:
+                - link [ref=e2732] [cursor=pointer]:
+                  - /url: /help-centre/shop-online
+                  - img "American Express" [ref=e2733]
+              - listitem [ref=e2734]:
+                - link [ref=e2735] [cursor=pointer]:
+                  - /url: /help-centre/payments
+                  - img "Afterpay" [ref=e2736]
+            - list [ref=e2738]:
+              - listitem [ref=e2739]: Follow Us
+              - listitem [ref=e2740]:
+                - link [ref=e2741] [cursor=pointer]:
+                  - /url: https://www.instagram.com/bunningsnz
+                  - img "Instagram, opens in a new window" [ref=e2742]
+              - listitem [ref=e2743]:
+                - link [ref=e2744] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@bunnings
+                  - img "TikTok, opens in a new window" [ref=e2745]
+              - listitem [ref=e2746]:
+                - link [ref=e2747] [cursor=pointer]:
+                  - /url: https://www.facebook.com/BunningsNewZealand
+                  - img "Facebook, opens in a new window" [ref=e2748]
+              - listitem [ref=e2749]:
+                - link [ref=e2750] [cursor=pointer]:
+                  - /url: https://www.youtube.com/user/bunningswarehouse
+                  - img "Youtube, opens in a new window" [ref=e2751]
+              - listitem [ref=e2752]:
+                - link [ref=e2753] [cursor=pointer]:
+                  - /url: https://www.pinterest.com.au/bunnings/_created/
+                  - img "Pinterest, opens in a new window" [ref=e2754]
+              - listitem [ref=e2755]:
+                - link [ref=e2756] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHxov4jw5xLnwAAAYx-6wJgu3d4_HGk6vzql-0L6jVFBM0u0RTCmbrj99fk2eA-Wwy4fP8ujEo8pYrTbqhHm66TTLwSwKIz8j8gvAIwHPM2qcGmnidfCCdY2t3u-eZJffMploI=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fbunnings%2Fposts%2F%3FfeedView%3Dall
+                  - img "Linked in, opens in a new window" [ref=e2757]
+  - alert [ref=e2758]

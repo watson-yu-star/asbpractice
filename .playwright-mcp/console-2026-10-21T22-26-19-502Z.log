@@ -1,0 +1,8 @@
+[     953ms] [WARNING] Manifest: property 'start_url' ignored, should be same origin as document. @ https://www.bunnings.co.nz/static/site.webmanifest:0
+[    2329ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.bunnings.co.nz/apis/auth/session:0
+[    9656ms] [LOG] [Sales Agent] Version local @ /_/mss/boq-cloud-ai-agentis/_/js/k=boq-cloud-ai-agentis.CommerceAiUiLoader.en_US.DtSjQYlZvQk.es5.O/am=AADA/d=1/rs=ANKHJKwy2-ZNwwn7uL3mNNEcbOXk4eESGA/m=caiu_loader_m,caiu_pdp_m:59
+[   10295ms] [LOG] front.js => connectedToInside @ https://au12-cdn.inside-graph.com/js/frontend-framework.js.bundle?v=6fcccd42ee-143461:2461
+[  310046ms] [LOG] disconnected from inside @ https://au12-cdn.inside-graph.com/js/frontend-framework.js.bundle?v=6fcccd42ee-143461:2988
+[  543880ms] [LOG] disconnected from inside @ https://au12-cdn.inside-graph.com/js/frontend-framework.js.bundle?v=6fcccd42ee-143461:2988
+[  544519ms] [LOG] front.js => connectedToInside @ https://au12-cdn.inside-graph.com/js/frontend-framework.js.bundle?v=6fcccd42ee-143461:2461
+[  557225ms] [LOG] disconnected from inside @ https://au12-cdn.inside-graph.com/js/frontend-framework.js.bundle?v=6fcccd42ee-143461:2988
