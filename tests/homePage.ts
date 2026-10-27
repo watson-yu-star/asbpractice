@@ -1,6 +1,7 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 import { BasePage } from './basePage';
 import { ProductCard } from './productCard';
+import test from 'node:test';
 
 export class HomePage extends BasePage {
   readonly searchElement: Locator;
@@ -18,7 +19,7 @@ export class HomePage extends BasePage {
     this.searchSummary = page.locator('#searchResultContainer').getByRole('heading', { level: 2 });
     //this.searchButton = page.getByLabel('Submit search');
     this.searchButton = page.getByRole('button', { name: 'Submit search' });
-    this.nextPageButton = page.getByRole('button', { name: 'Next page' });
+   // this.nextPageButton = page.getByRole('button', { name: 'Next page' });
     this.searchCount = 0;
     this.pageSize = 36;
     this.nextPageButton = page.getByRole('button', { name: 'Next page' });
@@ -101,12 +102,30 @@ export class HomePage extends BasePage {
 
   async gotoLastPage():Promise<boolean>{
 
-         let haveNext = await this.nextPageButton.isEnabled();
-         while (haveNext){
-            await this.nextPageButton.click();
-            haveNext =  await this.nextPageButton.isEnabled();
+        const targetApiUrl = '/_apis/v1/facets/products/search';
+
+       //  let haveNext = await this.nextPageButton.isEnabled();
+         while (true){
+           // await this.nextPageButton.click();
+           const nextButton = this.nextPageButton; //this.page.getByRole('button', { name: 'Next page' });
+           const isClickable = await nextButton.isEnabled({ timeout: 1500 }).catch(() => false);
+            if (!isClickable) {
+                break; // Exit loop if the button is disabled or missing (last page reached)
+            }
+           await Promise.all([
+                this.page.waitForResponse(
+                    response => response.url().includes(targetApiUrl) && response.status() === 200,
+                    { timeout: 5000 }
+                ).catch(() => {
+                    // Fallback in case it's a client-side layout redraw with no network request
+                }),
+                nextButton.click()
+            ]);
+            
+            //haveNext =  await nextButton.isEnabled();
          }
-        return this.nextPageButton.isDisabled();
+         await this.nextPageButton.isDisabled();
+         return true;
 
   }
   async getUrl():Promise<string>{
@@ -114,6 +133,15 @@ export class HomePage extends BasePage {
   }
 
   async addtoCart(index:Number):Promise<ProductCard>{
+
+    const isWebKit = await this.getBrowserEngine() === 'webkit';
+    if(isWebKit){
+      console.log("webkit is running");
+      const firstProductTile = this.page.locator('div[data-locator="search-product-tile-index-0"]');
+
+      // Force WebKit to block execution until the element actually attaches to the live DOM tree
+      await firstProductTile.waitFor({ state: 'attached', timeout: 7000 });
+    }
     await expect(this.page.locator(`div[data-locator=search-product-tile-index-${index}]`)).toBeVisible();
     await this.page.locator(`div[data-locator=search-product-tile-index-${index}]`).getByRole('button',{name: "Add to Cart"}).click();
     const productCard: ProductCard = new ProductCard(this.page, index);

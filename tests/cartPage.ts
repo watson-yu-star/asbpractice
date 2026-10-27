@@ -31,7 +31,19 @@ export class CartPage extends BasePage {
     async clickCollect():Promise<void>{
       // Because the sr-only class 
       //await this.page.locator('input[name="shopping-method"][value="pickup"]').check({ force: true });
-        await this.clickCollectEelement.click();
+       const isWebKit = await this.getBrowserEngine() === 'webkit';
+      
+       if(!isWebKit) {
+            await this.clickCollectEelement.click();
+       }else{
+          const element = this.page.locator('label').filter({ hasText: 'Click & Collect' });
+    
+        // Ensure it exists in the DOM first
+         await element.waitFor({ state: 'attached' });
+    
+        // Evaluate a direct JavaScript click inside WebKit's execution context
+            await element.evaluate(node => (node as HTMLElement).click());
+       }
         
     }
 

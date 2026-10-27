@@ -10,4 +10,8 @@ export class BasePage {
 	protected async navigateTo(path: string): Promise<void> {
 		await this.page.goto(path);
 	}
+	async getBrowserEngine(): Promise<string> {
+    // returns 'chromium', 'webkit', or 'firefox'
+    return this.page.context().browser()?.browserType().name() || '';
+}
 }
