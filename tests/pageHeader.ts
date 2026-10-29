@@ -1,4 +1,4 @@
-import type { Locator, Page } from '@playwright/test';
+import { expect, type Locator, type Page } from '@playwright/test';
 import { BasePage } from './basePage';
 
 export class PageHeader extends BasePage {
@@ -45,6 +45,8 @@ export class PageHeader extends BasePage {
     } else {
       await this.cartElement.click();
     }
+    const spinner = this.page.getByRole('img',{name:"loading"});
+    await expect(spinner).toBeHidden();
   }
 
   async getCartItemCount(): Promise<number> {

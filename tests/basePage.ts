@@ -13,5 +13,9 @@ export class BasePage {
 	async getBrowserEngine(): Promise<string> {
     // returns 'chromium', 'webkit', or 'firefox'
     return this.page.context().browser()?.browserType().name() || '';
-}
+   }
+   async getUrl():Promise<string>{
+    return this.page.url();
+  }
+
 }
