@@ -59,7 +59,7 @@ test("add product to cart",async({homePage,pageHeader})=>{
 
 });
 
-test.only("checkout the order", async({homePage,pageHeader,cartPage})=>{
+test("checkout the order", async({homePage,pageHeader,cartPage})=>{
   const name = 'battery';
   await homePage.goto();
   await pageHeader.search(name);
