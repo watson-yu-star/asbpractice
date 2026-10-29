@@ -2,11 +2,11 @@ import type { Locator, Page } from '@playwright/test';
 import { BasePage } from './basePage';
 
 export class PageHeader extends BasePage {
-  readonly searchElement: Locator;
-  readonly searchButton: Locator;
-  readonly signInElement: Locator;
-  readonly cartElement: Locator;
- readonly  redIconElement: Locator;
+  private readonly searchElement: Locator;
+  private readonly searchButton: Locator;
+  private readonly signInElement: Locator;
+  private readonly cartElement: Locator;
+  private readonly  redIconElement: Locator;
 
   constructor(page: Page) {
    super(page);
@@ -20,7 +20,19 @@ export class PageHeader extends BasePage {
   async search(keyword: string): Promise<void> {
     await this.searchElement.click();
     await this.searchElement.fill(keyword);
+
+    const responsePromise = this.page.waitForResponse(response =>
+      response.url().includes('/products.json') &&
+      response.request().method() === 'GET'
+    );
+
+   // await this.searchElement.press("Enter");
     await this.searchButton.click();
+    await responsePromise;
+    await this.page.waitForURL(url =>
+      url.pathname === '/search/products' &&
+      url.searchParams.get('q') === keyword
+    );
   }
 
   async clickSignIn(): Promise<void> {
@@ -28,7 +40,11 @@ export class PageHeader extends BasePage {
   }
 
   async clickCart(): Promise<void> {
-    await this.cartElement.click();
+    if (await this.getBrowserEngine() === 'webkit') {
+      await this.cartElement.press('Enter');
+    } else {
+      await this.cartElement.click();
+    }
   }
 
   async getCartItemCount(): Promise<number> {

@@ -4,14 +4,14 @@ import { BasePage } from './basePage';
 export class NavigationBar extends BasePage {
 
   //readonly navigation: Locator;
-  readonly menuElement: Locator;
-  readonly closeMenuElement: Locator;
-  readonly  diyElement: Locator;
-  readonly serviceElement: Locator;
-  readonly storeElement: Locator;
-  readonly navElement: Locator;
-  readonly catalogueElement: Locator;
-  readonly mainNavElement:Locator;
+  private readonly menuElement: Locator;
+  private readonly closeMenuElement: Locator;
+  private readonly  diyElement: Locator;
+  private readonly serviceElement: Locator;
+  private readonly storeElement: Locator;
+  private readonly navElement: Locator;
+  private readonly catalogueElement: Locator;
+  private readonly mainNavElement:Locator;
   
   constructor(page: Page) {
     super(page);

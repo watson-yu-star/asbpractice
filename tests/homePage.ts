@@ -4,13 +4,13 @@ import { ProductCard } from './productCard';
 import test from 'node:test';
 
 export class HomePage extends BasePage {
-  readonly searchElement: Locator;
-  readonly searchSummary: Locator;
-  readonly url: string;
-  readonly searchButton: Locator;
-  readonly nextPageButton: Locator;
-           searchCount: number;
-  readonly pageSize: number;
+  private readonly searchElement: Locator;
+  private readonly searchSummary: Locator;
+  private readonly url: string;
+  private readonly searchButton: Locator;
+  private readonly nextPageButton: Locator;
+  private         searchCount: number;
+  private readonly pageSize: number;
 
   constructor(page: Page) {
     super(page);
@@ -27,15 +27,19 @@ export class HomePage extends BasePage {
   }
 
   async goto(): Promise<void> {
+    let baseURL = process.env.BASE_URL;
+     //      origin: 'https://www.bunnings.co.nz',
+    
     await this.page.context().grantPermissions([], {
-           origin: 'https://www.bunnings.co.nz',
-            });
+      origin: baseURL,
+    });
     await this.navigateTo('');
   }
 
   async search(keyword: string): Promise<void> {
     await this.searchElement.click();
     await this.searchElement.fill(keyword);
+    //await this.searchButton.click();
     //await this.searchElement.press('Enter');
 
     const responsePromise = this.page.waitForResponse(response =>
@@ -49,7 +53,9 @@ export class HomePage extends BasePage {
     let count= parseInt(jsonData.pageProps.dehydratedState.queries[1].state.data.availableCategoriesWithCount[0].count);
     this.searchCount = count;
     console.log("response total number;"+count);
-
+    await this.page.waitForURL(url => (
+      url.pathname === '/search/products' && url.searchParams.get('q') === keyword
+    ));
 
   }
 
@@ -69,16 +75,14 @@ export class HomePage extends BasePage {
     }
     expect(this.searchCount).toEqual(count);
     
-    let lastPage;
+    
     let index;
-
+    const lastPage = Math.max(1, Math.ceil(this.searchCount / this.pageSize));
     if (count%this.pageSize == 0){
-        lastPage =  count/this.pageSize;
+       
         index =this.pageSize-1;
     }
     else{
-
-        lastPage =  Math.floor(count/this.pageSize)+1;
         index = count%this.pageSize-1;
     }
     let url = `search/products?page=${lastPage}&q=mower&sort=BoostOrder`;
@@ -101,31 +105,17 @@ export class HomePage extends BasePage {
   }
 
   async gotoLastPage():Promise<boolean>{
+    const lastPage = Math.max(1, Math.ceil(this.searchCount / this.pageSize));
+    const lastPageUrl = new URL(this.page.url());
+    const currentPage = Number(lastPageUrl.searchParams.get('page') ?? 1);
 
-        const targetApiUrl = '/_apis/v1/facets/products/search';
+    if (currentPage < lastPage) {
+      lastPageUrl.searchParams.set('page', String(lastPage));
+      await this.page.goto(lastPageUrl.toString(), { waitUntil: 'domcontentloaded' });
+    }
 
-       //  let haveNext = await this.nextPageButton.isEnabled();
-         while (true){
-           // await this.nextPageButton.click();
-           const nextButton = this.nextPageButton; //this.page.getByRole('button', { name: 'Next page' });
-           const isClickable = await nextButton.isEnabled({ timeout: 1500 }).catch(() => false);
-            if (!isClickable) {
-                break; // Exit loop if the button is disabled or missing (last page reached)
-            }
-           await Promise.all([
-                this.page.waitForResponse(
-                    response => response.url().includes(targetApiUrl) && response.status() === 200,
-                    { timeout: 5000 }
-                ).catch(() => {
-                    // Fallback in case it's a client-side layout redraw with no network request
-                }),
-                nextButton.click()
-            ]);
-            
-            //haveNext =  await nextButton.isEnabled();
-         }
-         await this.nextPageButton.isDisabled();
-         return true;
+    await expect(this.nextPageButton).toBeDisabled();
+    return true;
 
   }
   async getUrl():Promise<string>{
@@ -133,19 +123,18 @@ export class HomePage extends BasePage {
   }
 
   async addtoCart(index:Number):Promise<ProductCard>{
-
-    const isWebKit = await this.getBrowserEngine() === 'webkit';
-    if(isWebKit){
-      console.log("webkit is running");
-      const firstProductTile = this.page.locator('div[data-locator="search-product-tile-index-0"]');
-
-      // Force WebKit to block execution until the element actually attaches to the live DOM tree
-      await firstProductTile.waitFor({ state: 'attached', timeout: 7000 });
+    const productTile = this.page.locator(`div[data-locator="search-product-tile-index-${index}"]`);
+    await expect(productTile).toBeVisible({ timeout: 15000 });
+    const addToCartButton = productTile.getByRole('button', { name: 'Add to Cart' });
+    if (await this.getBrowserEngine() === 'webkit') {
+      await expect(addToCartButton).toBeEnabled();
+      await addToCartButton.press('Enter');
+    } else {
+      await addToCartButton.click();
     }
-    await expect(this.page.locator(`div[data-locator=search-product-tile-index-${index}]`)).toBeVisible();
-    await this.page.locator(`div[data-locator=search-product-tile-index-${index}]`).getByRole('button',{name: "Add to Cart"}).click();
     const productCard: ProductCard = new ProductCard(this.page, index);
     return productCard;
 
   }
+
 }

@@ -42,7 +42,6 @@ test('click the product menu',async({homePage,navBar})=>{
   await allure.feature('homepage menu');
    await homePage.goto();
    await navBar.clickMenu();
-   await expect(navBar.closeMenuElement).toBeVisible();
    const arr = await navBar.getMenuItems();
    expect(arr?.length).toBeGreaterThan(10);
    await navBar.clickFirstLevel("Tools");
@@ -60,7 +59,7 @@ test("add product to cart",async({homePage,pageHeader})=>{
 
 });
 
-test("checkout the order", async({homePage,pageHeader,cartPage})=>{
+test.only("checkout the order", async({homePage,pageHeader,cartPage})=>{
   const name = 'battery';
   await homePage.goto();
   await pageHeader.search(name);

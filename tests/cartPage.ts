@@ -15,7 +15,7 @@ export class CartPage extends BasePage {
     	super(page);
 		this.cartItems = page.locator('.cartTileContainer');
 		//this.checkoutButton = page.getByRole('button', { name: /Continue to checkout/i });
-        this.findStoreDiv = page.getByText(/Find a store/i);
+        this.findStoreDiv = page.getByRole('button', { name: 'Find a store', exact: true });
         this.summarySection = page.locator('div.orderSummaryWrapper');
         this.checkoutButton = this.summarySection.getByRole('button', { name: /Continue to checkout/i });
         this.clickCollectEelement= page.locator('label').filter({hasText: "Click & Collect"});
@@ -37,41 +37,73 @@ export class CartPage extends BasePage {
             await this.clickCollectEelement.click();
        }else{
           const element = this.page.locator('label').filter({ hasText: 'Click & Collect' });
-    
-        // Ensure it exists in the DOM first
-         await element.waitFor({ state: 'attached' });
-    
-        // Evaluate a direct JavaScript click inside WebKit's execution context
-            await element.evaluate(node => (node as HTMLElement).click());
+          await element.waitFor({ state: 'attached' });
+          await element.evaluate(node => (node as HTMLElement).click());
        }
-        
     }
 
     async selectStore(postCode:string,storeName:string):Promise<Locator>{
         await expect(this.page.getByText(/Select a store to check product availability./i)).toBeVisible();
-        await this.findStoreDiv.click();
-       // await this.page.getByLabel("Search postcode or suburb").fill(postCode);
-       await this.selectStoreCombobox.fill(postCode); 
-       await this.autoSuggestionListBox.getByRole('option')
-                       .filter({hasText:"1050"})
-                       .click();
-       
+        await expect(this.findStoreDiv).toBeVisible();
+        if (await this.getBrowserEngine() === 'webkit') {
+            await this.findStoreDiv.evaluate(button => (button as HTMLButtonElement).click());
+            await expect(this.page.getByRole('dialog').getByRole('heading', { name: 'Find a store' })).toBeVisible();
+        } else {
+            await this.findStoreDiv.click();
+        }
+        const suggestionsResponse = this.page.waitForResponse(response =>
+            response.url().includes(
+                'maps.googleapis.com/maps/api/place/js/AutocompletionService.GetPredictionsJson'
+            ) && response.ok()
+        );
+        await expect(this.selectStoreCombobox).toBeEnabled();
+        await this.selectStoreCombobox.fill(postCode);
+       //await this.autoSuggestionListBox.fill(postCode);
+       await suggestionsResponse;
+       await expect(this.page.locator('#storeAutoSuggest-listbox')).toBeVisible();
+        
+        const optionElement =  this.autoSuggestionListBox.getByRole('option', {
+                    name: 'Auckland 1050',
+                    exact: true,
+            });
+
+        //this.page.pause();
+
+        await expect(optionElement).toBeVisible();
+        await optionElement.click();
+
+      
         await this.page.getByRole('button', { name: `${storeName}` })
                        .click();
         const buttonName = `Click & Collect from ${storeName}`;
-        await this.page.getByRole('button',{name:`${buttonName}`})
-                       .click();
-      
+        const useStoreButton = this.page.getByRole('button', { name: buttonName });
+        if (await this.getBrowserEngine() === 'webkit') {
+            await useStoreButton.evaluate(button => (button as HTMLButtonElement).click());
+            await this.page.waitForTimeout(500);
+        } else {
+            await useStoreButton.click();
+        }
+       
+        const spinner = this.page.getByRole('img', { name: 'loading' });
+
+        // Wait until loading finishes:
+        await expect(spinner).toBeHidden();
                        
        const storeCard = this.page
                             .getByRole('button')
                             .filter({ has: this.page.locator('p', { hasText: `${storeName}` }) });
-      // await expect(storeCard).toBeVisible();
-         return storeCard;
+       await expect(storeCard).toBeVisible();
+
+       return storeCard;
       
     }
 
 	async getItemCount(): Promise<Locator> {
+        const spinner = this.page.getByRole('img', { name: 'loading' });
+
+        //await expect(spinner).toBeVisible();
+        await expect(spinner).toBeHidden();
+
         await expect(this.cartItems.first()).toBeVisible();
         //console.log(await this.cartItems.count());
         return this.cartItems;
@@ -101,13 +133,17 @@ export class CartPage extends BasePage {
 
     }
     async getItemPrice(index:number): Promise<number>{
-        const value = await this.cartItems
-			.nth(index)
-            .locator('div.productPrice')
+       const price = this.cartItems.nth(index)
             .locator('p')
-            .innerText();
-        const price = parseFloat(value.trim().substring(1));
-        return price;
+            .filter({ hasText: /\$\s*\d/ });
+
+        await expect(price).toBeVisible();
+        const value = await price.innerText();
+        const numericPrice = Number(value.replace(/[^\d.]/g, ''));
+        if (!Number.isFinite(numericPrice)) {
+            throw new Error(`Could not parse cart item price from "${value}".`);
+        }
+        return numericPrice;
     }
     async getDeliveryPromise():Promise<string>{
         const promise = await this.promiseEelement.innerText();
@@ -170,19 +206,33 @@ export class CartPage extends BasePage {
 	}
 
 	async proceedToCheckout(): Promise<void> {
-		await expect(this.checkoutButton).toBeEnabled();
-		await this.checkoutButton.click();
+      
+        if (await this.getBrowserEngine() === 'webkit') {
+             this.page.waitForTimeout(500);
+            // await this.checkoutButton.waitFor({ state: 'attached' });
+		     await expect(this.checkoutButton).toBeEnabled();
+          
+            await this.checkoutButton.click();
+           
+        } else {
+            await this.checkoutButton.click();
+        }
+
+        await expect(this.page.getByRole('button', { name: 'Sign in or sign up' })).toBeVisible();
 	}
     async checkOrderSummary(item:number):Promise<number>{
         await expect(this.summarySection.getByRole('heading',{name:"Order summary"})).toBeVisible();
-        const subtotalText = await this.summarySection.locator('div[data-locator=text_Subtotal]').innerText();
-    
-        const quantity = subtotalText.match(/Subtotal \((\d+) item\)/);
-        
-        expect(String(item)).toEqual(quantity?quantity[1]:0);
-        const subtotal = await this.summarySection.locator('div[data-locator=text_NumberSubtotalValue]').innerText();
+        const subtotalRow = this.summarySection.getByRole('row')
+            .filter({ hasText: /^Subtotal \(\d+ items?\)/ });
+        const subtotalText = await subtotalRow.getByRole('cell').first().innerText();
 
-        const subtotalFloat = parseFloat(subtotal.trim().substring(1));
+        const quantity = subtotalText.match(/Subtotal \((\d+) item\)/);
+        expect(String(item)).toEqual(quantity?quantity[1]:0);
+        const subtotalValue = subtotalRow.getByRole('cell').nth(1);
+        await expect(subtotalValue).toBeVisible();
+        const subtotal = await subtotalValue.innerText();
+
+        const subtotalFloat = parseFloat(subtotal.replace(/[^\d.]/g, ''));
         return subtotalFloat;
     }
 }
