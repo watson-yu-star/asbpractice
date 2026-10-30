@@ -32,7 +32,7 @@ export class PageHeader extends BasePage {
     await this.page.waitForURL(url =>
       url.pathname === '/search/products' &&
       url.searchParams.get('q') === keyword
-    );
+    ,{waitUntil:"load"});
   }
 
   async clickSignIn(): Promise<void> {
@@ -49,6 +49,7 @@ export class PageHeader extends BasePage {
 
     const spinner = this.page.getByRole('img',{name:"loading"});
     await expect(spinner).toBeHidden();
+    await expect(this.page).toHaveTitle("Your Cart & Checkout - Bunnings New Zealand");
   }
 
   async getCartItemCount(): Promise<number> {

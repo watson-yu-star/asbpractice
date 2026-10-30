@@ -34,6 +34,7 @@ export class HomePage extends BasePage {
       origin: baseURL,
     });
     await this.navigateTo('');
+    await expect(this.page).toHaveTitle('New Zealand DIY, Garden & Hardware Store - Bunnings New Zealand');
   }
 
   async search(keyword: string): Promise<void> {
@@ -55,7 +56,7 @@ export class HomePage extends BasePage {
     console.log("response total number;"+count);
     await this.page.waitForURL(url => (
       url.pathname === '/search/products' && url.searchParams.get('q') === keyword
-    ));
+    ),{waitUntil:"load"});
 
   }
 
@@ -118,9 +119,7 @@ export class HomePage extends BasePage {
     return true;
 
   }
-  async getUrl():Promise<string>{
-    return this.page.url();
-  }
+  
 
   async addtoCart(index:Number):Promise<ProductCard>{
     const productTile = this.page.locator(`div[data-locator="search-product-tile-index-${index}"]`);
