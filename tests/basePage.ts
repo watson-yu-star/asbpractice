@@ -15,7 +15,7 @@ export class BasePage {
     return  this.page.context().browser()?.browserType().name() || '';
    }
    async getUrl():Promise<string>{
-    return await this.page.url();
+    return this.page.url();
   }
 
 }
