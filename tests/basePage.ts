@@ -1,7 +1,7 @@
 import type { Page } from '@playwright/test';
 
 export class BasePage {
-	readonly page: Page;
+	protected readonly page: Page;
 
 	constructor(page: Page) {
 		this.page = page;
@@ -12,10 +12,10 @@ export class BasePage {
 	}
 	async getBrowserEngine(): Promise<string> {
     // returns 'chromium', 'webkit', or 'firefox'
-    return this.page.context().browser()?.browserType().name() || '';
+    return  this.page.context().browser()?.browserType().name() || '';
    }
    async getUrl():Promise<string>{
-    return this.page.url();
+    return await this.page.url();
   }
 
 }
