@@ -2,14 +2,14 @@ import { expect, Locator, Page } from '@playwright/test';
 import { BasePage } from './basePage';
 
 export class CartPage extends BasePage {
-	readonly cartItems: Locator;
-	readonly checkoutButton: Locator;
-    readonly findStoreDiv: Locator;
-    readonly summarySection: Locator;
-    readonly clickCollectEelement: Locator;
-    readonly selectStoreCombobox: Locator;
-    readonly autoSuggestionListBox: Locator;
-    readonly promiseEelement: Locator;
+	private readonly cartItems: Locator;
+	private readonly checkoutButton: Locator;
+    private readonly findStoreDiv: Locator;
+    private readonly summarySection: Locator;
+    private readonly clickCollectEelement: Locator;
+    private readonly selectStoreCombobox: Locator;
+    private readonly autoSuggestionListBox: Locator;
+    private readonly promiseEelement: Locator;
 
 	constructor(page: Page) {
     	super(page);
@@ -78,8 +78,9 @@ export class CartPage extends BasePage {
         const buttonName = `Click & Collect from ${storeName}`;
         const useStoreButton = this.page.getByRole('button', { name: buttonName });
         if (await this.getBrowserEngine() === 'webkit') {
-            await useStoreButton.evaluate(button => (button as HTMLButtonElement).click());
-            await this.page.waitForTimeout(500);
+            //await useStoreButton.evaluate(button => (button as HTMLButtonElement).click());
+            //await this.page.waitForTimeout(500);
+             await useStoreButton.click();
         } else {
             await useStoreButton.click();
         }

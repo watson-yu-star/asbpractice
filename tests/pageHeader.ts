@@ -45,6 +45,8 @@ export class PageHeader extends BasePage {
     } else {
       await this.cartElement.click();
     }
+    await this.page.waitForURL("**/cart",{waitUntil:'load'});
+
     const spinner = this.page.getByRole('img',{name:"loading"});
     await expect(spinner).toBeHidden();
   }

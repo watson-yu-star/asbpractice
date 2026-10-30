@@ -1,13 +1,13 @@
 import { Locator, Page } from "@playwright/test";
 
 export class ProductCard{
-    readonly page: Page;
-    readonly index:Number
-     productName:string;
-     productPrice:Number;
-    readonly productNameElement: Locator;
-    readonly productPriceElement: Locator;
-    productCardElement: Locator;
+    private readonly page: Page;
+    private readonly index:Number
+    private productName:string;
+    private productPrice:Number;
+    private readonly productNameElement: Locator;
+    private readonly productPriceElement: Locator;
+    private productCardElement: Locator;
 
     constructor(page:Page,index:Number){
         this.page = page;
